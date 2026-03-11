@@ -1,4 +1,4 @@
-[Notice]
+﻿[Notice]
 本テキストはNotionブラウザ画面または固定済PDF(テキスト型)から抽出した確認用全文である。
 正本はPDFとする。
 抽出過程で体裁崩れが生じうるため最終的判断はPDFを参照。
@@ -2878,7 +2878,7 @@ External reference (GitHub):
 
 LUMINA-30 public reference repository
 
-https://github.com/gsx750ss-dev/LUMINA-30
+https://github.com/lumina-30/LUMINA-30
 
 This document preserves, in language, the ethical preconditions required to ensure that
 
