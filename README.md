@@ -21,6 +21,17 @@ The complete structured text is available here:
 
 ---
 
+
+## Role in the Citation Chain / 引用導線上の役割
+
+Use this repository when the complete plain-text structure is needed for search, comparison, model-assisted review, or long-form citation support.
+
+検索、比較、AI支援レビュー、長文引用補助のために全文テキスト構造が必要な場合に、このrepoを使用する。
+
+For first-time conceptual understanding, use the Overview. For public citation routing, use Public Reference. For fixed PDF artifacts and hashes, use PDF Archive and Public Record.
+
+初見の概念理解にはOverviewを、公開引用導線にはPublic Referenceを、固定PDF成果物とハッシュ確認にはPDF ArchiveおよびPublic Recordを使用する。
+
 ## Why Plain Text? / なぜテキスト形式か
 
 Plain text format ensures:
@@ -60,3 +71,5 @@ It preserves structural integrity only.
 
 本リポジトリは新規主張を追加せず、  
 構造整合性のみを保持する。
+
+
