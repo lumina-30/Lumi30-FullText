@@ -11,6 +11,24 @@ in plain text format for archival integrity and cross-analysis.
 
 ---
 
+## Extract Notice / 抽出本文注記
+
+EN:  
+This repository preserves extracted reference text for search, comparison, archival integrity, and long-form citation support.  
+It does not update, reinterpret, or operationalize the extracted source wording.
+
+Terms appearing inside extracted text, including "standard", "approval", "authorization", "certification", or "compliance", are preserved as source text or local-context wording only.  
+They do not create certification status, compliance status, approval status, institutional authorization, legal authority, or any binding standard under LUMINA-30.
+
+JP:  
+本リポジトリは、検索、比較、保存整合性、長文引用補助のために抽出参照本文を保存する。  
+抽出元本文の文言を更新・再解釈・運用制度化するものではない。
+
+抽出本文内に含まれる "standard", "approval", "authorization", "certification", "compliance" 等の語は、元本文または局所文脈上の語として保存されているにすぎない。  
+それらは、LUMINA-30における認証状態、準拠状態、承認状態、制度的認可、法的権限、拘束的標準を作らない。
+
+---
+
 ## Read the Complete Text / 全文参照
 
 The complete structured text is available here:
