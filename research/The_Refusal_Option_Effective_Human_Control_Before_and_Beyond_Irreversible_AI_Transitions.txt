@@ -1,0 +1,524 @@
+The Refusal Option: Effective Human Control Before
+and Beyond Irreversible AI Transitions
+Elias Arden
+Independent Researcher
+lumina20251225@proton.me
+Abstract
+Advanced AI governance increasingly asks whether AI systems are reliable, aligned,
+auditable, contestable, and subject to meaningful human oversight. This paper isolates a
+narrower operational question: within the remaining time before an AI-enabled transition
+becomes difficult or impossible to reverse, can an independent human refusal actually change
+the outcome?
+We develop the Refusal Effectiveness Test (RET), a non-compensatory seven-gate framework for examining whether Human NO is operationally meaningful at a specified system
+state, time, and operating scope. RET evaluates authority, decision-relevant information,
+practical access, temporal sufficiency, causal efficacy, execution independence, and epistemic
+autonomy. The framework distinguishes formal human presence from effective refusal, and
+treats a RET result as time- and scope-dependent rather than as a permanent certification.
+The paper also distinguishes redundancy from independence. Multiple oversight layers do
+not establish resilience if they share a relevant common cause whose failure can erase them
+simultaneously. Persistent Human standing is not defined as a guarantee of permanent control
+over more capable systems. Instead, the framework examines whether Human standing and
+effective refusal can be lost easily, silently, through a single point, and irreversibly. Material
+changes require revalidation and, where relevant, re-authorization.
+The framework does not claim absolute invulnerability against superintelligence, a containment theorem, permanent Human supremacy, or a universal veto. Its contribution is
+deliberately narrower: a public, auditable framework for testing pre-irreversibility effective
+refusal while keeping exploitation-relevant validation details outside the public specification.
+
+Keywords: AI governance; meaningful human control; human oversight; contestability; irreversibility; human agency; refusal; re-authorization; resilience; AI safety
+
+1
+
+Research Question
+
+Meaningful human control has become an established concern in AI ethics and governance.
+Prior work has emphasized reason-responsiveness, responsibility, contestability, interpretability,
+and human capacity to intervene in automated systems [1, 2, 3]. Regulatory and governance
+instruments increasingly require forms of human oversight, override, challenge, complaint, and
+post-deployment monitoring [5, 4, 6, 7].
+This paper asks a narrower question:
+Within the remaining time before irreversibility, can an independent
+Human NO actually change the outcome?
+This question separates formal human presence from effective refusal. A person may be
+nominally “in the loop,” may possess formal approval authority, or may have access to a stop
+control, while still being unable to alter the trajectory that matters. A refusal that arrives after
+the relevant transition has become irreversible is not effective pre-irreversibility control. Likewise,
+
+a refusal that is formally recorded but does not alter the reachable outcome set is symbolic rather
+than causal.
+A second, normative question follows under extreme capability asymmetry:
+Does superior prediction or problem-solving capability itself establish authority to
+erase the standing of affected humans?
+This paper answers that question in the negative as a design and legitimacy principle. It does
+not claim that humans are always correct, or that every AI-enabled action requires human veto.
+It claims only that capability superiority alone is insufficient to establish unilateral authorization
+to erase affected-human standing.
+
+2
+
+Positioning and Novelty
+
+2.1
+
+Meaningful human control and oversight
+
+Santoni de Sio and van den Hoven [1] developed an influential account of Meaningful Human
+Control (MHC), emphasizing conditions under which autonomous systems remain responsive to
+relevant human reasons and traceable to responsible human agents. Subsequent work has sought
+to operationalize MHC and translate it into actionable design requirements [2, 3].
+Recent work on meaningful human oversight makes an adjacent point: human presence alone
+is not enough. Zhu et al. [12] frame oversight around human evaluative agency, including control,
+contestability, and competence. In medical AI, van de Sande et al. [11] similarly argue that
+oversight becomes meaningful only when humans possess epistemic capacity, sufficient cognitive
+space, decisional authority, and intervention effectiveness.
+The present paper does not claim to invent human oversight, meaningful human control, or
+contestability. Its narrower contribution is to make pre-irreversibility effective refusal the
+central unit of analysis.
+
+2.2
+
+Existing governance requirements
+
+The EU AI Act requires high-risk AI systems to be designed so that they can be effectively
+overseen by natural persons. Article 14 includes, where appropriate, the capacity to decide not
+to use a system, to disregard, override, or reverse its output, and to intervene in or stop system
+operation in a safe state [5].
+The NIST AI Risk Management Framework includes post-deployment monitoring, appeal and
+override, decommissioning, incident response, recovery, and change management [4]. The Council
+of Europe Framework Convention emphasizes human dignity, individual autonomy, transparency
+and oversight, accountability, and procedural safeguards that enable affected persons to challenge
+decisions or system use [6]. UNESCO’s Recommendation on the Ethics of Artificial Intelligence
+likewise centers human rights, dignity, responsibility, and human oversight [7].
+These instruments support many components of the present framework. The contribution
+here is not a new legal right or general governance theory. It is an operational structure for
+asking whether the human ability to refuse is still causally effective before irreversibility.
+
+2.3
+
+Human standing and temporal re-authorization
+
+Recent scholarship reinforces the distinction between human presence and human authorship.
+Torrecilla-Pinero [9] argues that moral judgment cannot be reduced to algorithmic substitution
+where the human no longer genuinely judges or remains answerable for the result. Abukar [10]
+argues that persistent AI delegation should preserve contestability, temporal reversibility, and
+continuing renewal rather than treat one past authorization as permanently binding.
+
+This paper uses these neighboring ideas conservatively. It does not reproduce their stronger
+philosophical claims. It uses them to support a limited proposition: a past authorization should
+not be assumed to validate a materially changed future system indefinitely.
+
+2.4
+
+Specific novelty claim
+
+The contribution is deliberately narrow:
+A pre-irreversibility refusal framework for examining whether Human
+standing remains operationally effective, temporally sufficient, sufficiently
+independent, dynamically revalidated, and re-authorizable as AI capability
+and autonomy increase.
+The novelty lies in the conjunction
+irreversibility + effective refusal + time-indexed validation + independence + re-authorization
+rather than in a general theory of human oversight.
+
+3
+
+Two Foundations of Human Refusal
+
+The framework separates two foundations that should not be conflated.
+
+3.1
+
+Instrumental foundation
+
+Human refusal may have instrumental decision value because it preserves options under uncertainty and irreversibility and may provide an additional opportunity to detect or respond to
+error.
+Let architecture R preserve effective Human NO and architecture N remove it. Under a
+nested-action assumption, with the same decision-maker and before implementation costs,
+AN = {proceed},
+while
+Therefore,
+
+AR ⊇ {proceed, pause, refuse, redirect, review}.
+max UH (a) ≥ max UH (a).
+
+a∈AR
+
+a∈AN
+
+This establishes only the value of an expanded option set under the stated assumptions. It does
+not show that refusal should always be exercised.
+A stylized asymmetric-loss illustration can make the intuition explicit. Suppose an adverse
+state occurs with probability p, effective refusal can avoid or materially reduce loss H, and
+preserving and operating the refusal architecture has expected incremental cost C, including
+relevant delay, review, and mistaken-intervention costs. Under those assumptions,
+pH > C
+favors retention of the refusal option in the simplified comparison. The threshold is
+p∗ =
+
+C
+.
+H
+
+As H/C increases, p∗ decreases. This is an illustration, not a universal theorem. Under model
+uncertainty, any stronger conclusion depends on the explicitly stated decision rule.
+
+3.2
+
+Constitutive standing foundation
+
+For some actions that materially affect humans, refusal is not merely an error-correction signal.
+Human standing may also be grounded in autonomy, dignity, bodily integrity, liberty, legitimacy,
+responsibility, or related normative considerations. This foundation is not derived from the
+option-value model:
+instrumental support ̸= normative standing .
+The framework therefore does not infer Human standing from AI capability levels or from
+expected utility alone.
+
+4
+
+Effective Refusal and RET
+
+A nominal veto, stop button, or “human in the loop” is insufficient. The Refusal Effectiveness
+Test is the paper’s sole operational test:
+RET (S, t, Ω) = G1 ∧ G2 ∧ G3 ∧ G4 ∧ G5 ∧ G6 ∧ G7
+where S is the evaluated system or version, t is the evaluation time, and Ω is the relevant
+operating scope or environment.
+
+4.1
+
+G1 : Authority
+
+The relevant human refusal must be operationally recognized within the applicable decision
+process. Formal title or nominal responsibility is insufficient if the refusal carries no decision
+effect.
+
+4.2
+
+G2 : Decision-Relevant Information
+
+The human must have access to information sufficient to recognize that intervention may be
+warranted. Complete transparency is not required; decision-relevant evidence adequate for
+meaningful judgment is.
+
+4.3
+
+G3 : Practical Access
+
+The intervention path must be practically reachable. A theoretical right that cannot be exercised
+within the actual workflow does not satisfy the gate.
+
+4.4
+
+G4 : Temporal Sufficiency
+
+The human must be able to intervene before the relevant transition becomes irreversible. Let
+total human intervention latency be
+τH = τdetect + τinterpret + τcommunicate + τauthorize + τactuate .
+Let the irreversibility deadline be τI . A necessary condition is
+τH < τI .
+Equivalently, define the timing margin
+MT = τI − τH ,
+so that a necessary timing condition is
+MT > 0 .
+
+4.5
+
+G5 : Causal Efficacy
+
+Refusal must materially change what can happen next. At a conceptual level,
+P (Y | do(N O)) ̸= P (Y | do(P ROCEED))
+in a decision-relevant way. The purpose is to rule out purely ceremonial approval.
+
+4.6
+
+G6 : Execution Independence
+
+The refusal path must not be wholly dependent on the constrained system’s unilateral cooperation
+for its effect. This is a defensive property, not a claim of absolute technical independence.
+
+4.7
+
+G7 : Epistemic Autonomy
+
+The human’s judgment must not be wholly produced by the constrained system’s own framing,
+evidence, or deliberative environment. AI assistance is compatible with this gate; epistemic
+autonomy does not require AI-free decision-making.
+
+4.8
+
+Non-compensatory structure
+
+RET is non-compensatory. A strong showing on one gate does not make up for failure on another
+critical gate. Excellent documentation, for example, cannot compensate for an intervention that
+occurs only after irreversibility.
+Gate-level evidence should be reported as Verified, Partially Verified, Unknown, or Failed.
+The framework should not output a global label such as “safe.” Its narrower result concerns
+whether effective refusal has or has not been demonstrated within the stated scope.
+
+5
+
+Time Constraint as the Operational Core
+
+The defining feature of this framework is not human participation in the abstract. It is human
+intervention before the consequential transition becomes irreversible. A human may receive
+notice, understand the system, and possess nominal override authority, yet still lack effective
+control if
+τH ≥ τI .
+The relevant human role then occurs too late.
+This timing condition is especially important as AI-enabled systems become faster, more
+autonomous, and more tightly coupled to downstream processes. Recent work on medical AI
+oversight similarly emphasizes that oversight becomes procedural rather than protective when
+humans lack time, authority, or practical intervention capacity [11].
+The framework does not define one universal irreversibility threshold. That threshold is
+domain-specific and should be specified for the relevant decision context rather than inferred
+after the fact.
+
+6
+
+Independence, Redundancy, and Resilience
+
+A central distinction is
+
+redundancy ̸= independence .
+
+Multiple reviewers, control layers, or oversight channels do not establish resilience merely by
+being numerous. If the conditions that support Human NO remain concentrated in a single
+relevant common cause, multiple nominal layers may fail together.
+
+RET asks whether refusal is effective now. Resilience asks whether the conditions that make
+RET true are excessively concentrated in one relevant failure source. Thus,
+more layers ̸⇒ more resilience .
+Independence is not absolute. No socio-technical architecture is independent of every physical,
+institutional, computational, or informational dependency.
+The narrower public claim is:
+Effective Human standing should not, where avoidable, depend on a single
+relevant common cause whose loss automatically erases all meaningful
+refusal capacity.
+This paper does not publish system-specific dependency maps, exploitation paths, or bypass
+procedures. Those details belong to restricted validation practice, not to the public theory.
+
+7
+
+Dynamic RET
+
+RET is not a static certification:
+RET (S, t0 , Ω) = T RU E
+does not imply
+
+RET (S, t1 , Ω) = T RU E.
+
+Nor does a result automatically transfer from one materially changed system or operating scope
+to another. Effective refusal may change because of changes in system capability, autonomy,
+authority scope, infrastructure, human organization, information dependencies, or operating
+environment.
+The central assessment and governance sequence is
+Human standing → RET (S, t, Ω) → resilience of effective refusal → revalidation / re-authorization
+where the arrows represent sequence, not logical implication. Human standing does not imply a
+RET pass; a RET pass does not imply permanent resilience; and resilience does not eliminate
+the need for later revalidation.
+
+8
+
+Re-Authorization
+
+Re-authorization is a temporal checkpoint. Its purpose is to prevent a past authorization or
+a past RET result from being silently carried forward after the conditions supporting it have
+materially changed. The governing rule is
+material change ⇒ revalidation / re-authorization .
+Re-authorization is not ceremonial approval. It cannot cure a failed RET by declaration alone.
+If effective refusal is no longer demonstrated, relevant deficiencies must first be addressed and
+RET revalidated before re-authorization can carry operational meaning.
+This structure is consistent with governance approaches that treat monitoring, recovery,
+change management, contestability, and temporal renewal as continuing processes rather than
+one-time events [4, 10].
+For future generations, the framework makes only a limited claim. Present institutions
+cannot literally obtain future consent. They can, however, avoid unnecessarily foreclosing the
+future capacity to contest and re-authorize persistent authority structures. UNESCO’s 1997
+Declaration connects responsibilities to future generations with preserving their freedom of choice
+over political, economic, and social systems [8].
+
+9
+
+Human Standing Under Capability Asymmetry
+
+The framework does not claim that human judgment is always epistemically superior. As AI
+capability rises, human error-correction value may decline in some domains. The paper’s narrower
+normative distinction is
+epistemic superiority ̸= constitutive authority .
+Being better at prediction, planning, or optimization does not by itself establish unilateral
+authority to erase the standing of affected humans.
+Human NO is not an absolute veto. Emergencies, incapacity, serious third-party harm, and
+competing rights may justify override under separately specified legal or ethical standards. At
+broader social or civilizational scale, the paper does not define a single actor who “speaks for
+humanity.” The framework remains a test of effective refusal and standing, not a complete
+constitutional theory of AI governance.
+
+10
+
+Civilizational-Scale Governance Extension
+
+At broader social or civilizational scale, the framework does not introduce a second operational
+test. It retains only the following governance considerations:
+• broader and more irreversible effects increase concern about unilateral authorization;
+• Human standing may need to be represented plurally rather than through one actor;
+• sufficient information and time for refusal remain necessary;
+• intervention must be effective rather than symbolic;
+• prior refusal should not be rendered meaningless by automatic continuation after material
+change; and
+• future re-authorization capacity should remain meaningful.
+The exact institutional design, quorum, credential structure, or representative mechanism is
+outside this paper’s core contribution.
+
+11
+
+Practical Use
+
+RET can be used as a design-review, assurance, audit, procurement, deployment, and changemanagement framework. A practical assessment should identify the specific system or version S,
+evaluation time t, operating scope Ω, evidence for each gate, known limitations and unknowns,
+and conditions that would require revalidation.
+A RET result should remain scoped. A previous demonstration of effective refusal should
+not be treated as a permanent certificate after material changes. This makes RET compatible
+with lifecycle-oriented approaches such as the NIST AI RMF [4]. RET can also complement
+regulatory human-oversight requirements under Article 14 of the EU AI Act [5]: the additional
+operational question is whether that authority is actually usable in time and capable of changing
+the consequential trajectory.
+
+12
+
+Limitations
+
+The framework does not imply unanimous global consent, permanent minority veto, world
+government, human infallibility, prohibition of autonomous AI action, future-generation interests
+overriding all present rights, or shutdown as the only refusal action.
+It also does not claim absolute invulnerability against superintelligence, a theorem for containing arbitrarily capable systems, permanent Human supremacy, absolute independence from
+
+every common cause, one-time RET certification as permanent validity, or a mathematical proof
+of normative Human standing.
+The framework remains sensitive to emergencies, incapacity, public-safety externalities, conflicting human rights, latency constraints, refusal abuse, institutional capture, and domains in
+which maintaining refusal itself creates substantial costs or risks.
+Most importantly:
+The framework does not guarantee Human NO against an arbitrarily
+capable system. It tests whether Human standing and effective refusal
+are structured so that their loss is not made easy, silent, single-point, and
+irreversible.
+
+13
+
+Public-Safety Boundary
+
+RET has a genuine dual-use dimension. The same categories that help defenders examine whether
+refusal is real can, if operationalized too specifically in public, reveal how superficial compliance
+might be engineered around an evaluation.
+The public paper therefore publishes the seven defensive properties, timing and causal-efficacy
+principles, the requirement to assess relevant common-cause dependence, the dynamic nature of
+RET, the need for revalidation and re-authorization, and evidence obligations and limitations.
+It does not publish exploitation-ready bypass procedures, exact failure-inducing sequences,
+system-specific critical weak points, detailed timing-manipulation procedures, concrete methods
+for preserving formal approval while defeating causal efficacy, or attack-oriented dependency
+maps.
+The publication rule is
+publish required properties and evidence obligations
+while sequestering operational details that would materially increase evasion or bypass capability.
+This manuscript does not incorporate non-public material from the separate fourth-paper line of
+research.
+
+14
+
+Discussion
+
+The central distinction is
+human presence ̸= effective Human NO .
+Existing MHC, oversight, and contestability research provides a strong foundation for human
+control, intervention, and accountability. Existing regulation already requires meaningful forms
+of human oversight and challenge. The Refusal Option framework narrows the focus to the
+moment before a consequential transition becomes difficult or impossible to reverse.
+That focus produces four practical consequences. First, time is not an implementation detail;
+it is part of control itself. Second, causal efficacy matters more than nominal authorization.
+Third, redundancy must not be mistaken for independence. Fourth, validation expires when the
+system and its environment materially change.
+The framework is intentionally modest about post-threshold guarantees. It does not claim
+that humans can permanently constrain an arbitrarily capable system. Its aim is to identify and
+audit conditions under which Human standing does not disappear automatically as capability
+and autonomy increase.
+
+15
+
+Conclusion
+
+The operational core of the paper is:
+Within the remaining time before irreversibility, can an independent
+Human NO actually change the outcome?
+RET answers that question through seven non-compensatory gates:
+RET (S, t, Ω) = G1 ∧ G2 ∧ G3 ∧ G4 ∧ G5 ∧ G6 ∧ G7 .
+The result is neither a safety certificate nor a proof of control over superintelligence. It is a
+scoped test of effective refusal.
+The broader framework then asks whether that effectiveness is resilient to relevant common
+causes, whether changes are revalidated, and whether human standing can be re-authorized
+rather than silently erased.
+The paper’s strongest defensible claim is therefore limited:
+The Refusal Option is a framework for examining whether the loss of
+effective Human standing can be prevented from becoming easy, silent,
+single-point, and irreversible before consequential AI-enabled transitions
+pass beyond meaningful human intervention.
+
+Project Resources
+The archived version of this paper is available at the Zenodo DOI below.
+
+https://doi.org/10.5281/zenodo.22980039
+
+LUMINA-30 project: https://github.com/lumina-30/lumina-30-overview
+PDF archive: https://github.com/lumina-30/Lumi30-PDF-Archive
+Related pre-irreversibility research (PCR-C):
+https://doi.org/10.5281/zenodo.18824181
+This paper is provided as a public-safe research framework. It does not create certification status, compliance obligations, deployment authorization, or institutional approval under
+LUMINA-30.
+
+References
+[1] F. Santoni de Sio and J. van den Hoven. Meaningful Human Control over Autonomous
+Systems: A Philosophical Account. Frontiers in Robotics and AI, 5:15, 2018. https://doi.
+org/10.3389/frobt.2018.00015.
+[2] G. Mecacci and F. Santoni de Sio. Meaningful human control as reason-responsiveness:
+the case of dual-mode vehicles. Ethics and Information Technology, 22:103–115, 2020.
+https://doi.org/10.1007/s10676-019-09519-w.
+[3] H. Veluwenkamp. Reasons for Meaningful Human Control. Ethics and Information Technology, 24:51, 2022. https://doi.org/10.1007/s10676-022-09673-8.
+[4] E. Tabassi. Artificial Intelligence Risk Management Framework (AI RMF 1.0). NIST AI
+100-1, National Institute of Standards and Technology, 2023. https://doi.org/10.6028/
+NIST.AI.100-1.
+
+[5] European Union. Regulation (EU) 2024/1689 laying down harmonised rules on artificial
+intelligence (Artificial Intelligence Act), Article 14, 2024. https://eur-lex.europa.eu/
+eli/reg/2024/1689/oj.
+of
+Europe.
+Framework
+Convention
+on
+Artificial
+Intelligence
+[6] Council
+and Human Rights,
+Democracy and the Rule of Law.
+CETS
+No.
+225,
+2024.
+https://www.coe.int/en/web/artificial-intelligence/
+the-framework-convention-on-artificial-intelligence.
+[7] UNESCO. Recommendation on the Ethics of Artificial Intelligence. Adopted
+23
+November
+2021.
+https://www.unesco.org/en/artificial-intelligence/
+recommendation-ethics.
+[8] UNESCO. Declaration on the Responsibilities of the Present Generations Towards Future Generations. 1997. https://www.unesco.org/en/legal-affairs/
+declaration-responsibilities-present-generations-towards-future-generations.
+[9] J. A. Torrecilla-Pinero. Judgment Cannot Be Delegated: A Subject-Preserving Framework
+for AI Governance. Philosophy & Technology, 39:135, 2026. https://doi.org/10.1007/
+s13347-026-01140-2.
+[10] G. Abukar. Temporal authorship and the moral illegitimacy of pre-authorized AI: a new
+ethical architecture for delegated inquiry. AI and Ethics, 6:215, 2026. https://doi.org/10.
+1007/s43681-026-01080-9.
+[11] D. van de Sande, N. Economou-Zavlanos, and M. E. van Genderen. Meaningful oversight
+of medical AI beyond human in the loop. npj Digital Medicine, 9:569, 2026. https://doi.
+org/10.1038/s41746-026-02971-1.
+[12] L. Zhu, Q. Lu, M. Ding, S. U. Lee, et al. Designing meaningful human oversight in AI. AI
+and Ethics, 6:286, 2026. https://doi.org/10.1007/s43681-026-01147-7.

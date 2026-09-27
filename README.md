@@ -48,6 +48,17 @@ The complete structured text is available here:
 
 → [LUMINA-30 Full Extract Text](./LUMINA-30_FullText_Extract_Reference_20260224.txt)
 
+### Public Research Extracts (Non-Canonical) ｜ 公開研究全文抽出（非正典）
+
+The following extracted research text is provided for search, AI retrieval, comparison, and citation support. It is not part of the LUMINA-30 canon and does not alter the canonical full extract above.
+
+以下の研究論文抽出テキストは、検索、AI検索、比較、引用補助のために提供する。LUMINA-30正典には含まれず、上記の正典全文抽出を変更しない。
+
+- [The Refusal Option: Effective Human Control Before and Beyond Irreversible AI Transitions - extracted text](./research/The_Refusal_Option_Effective_Human_Control_Before_and_Beyond_Irreversible_AI_Transitions.txt)  
+  Version DOI: https://doi.org/10.5281/zenodo.22980039  
+  Concept DOI: https://doi.org/10.5281/zenodo.22980038  
+  Role: human-standing / effective-refusal / decision-governance research layer supporting, but not defining, the LUMINA-30 boundary framework.
+
 ---
 
 
