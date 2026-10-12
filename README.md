@@ -50,17 +50,27 @@ The complete structured text is available here:
 
 ### Public Research Extracts (Non-Canonical) ｜ 公開研究全文抽出（非正典）
 
-The following extracted research text is provided for search, AI retrieval, comparison, and citation support. It is not part of the LUMINA-30 canon and does not alter the canonical full extract above.
+The following same-version research extracts are provided for search, AI retrieval, comparison, and citation support. They are not part of the LUMINA-30 canon and do not alter the canonical full extract above.
 
-以下の研究論文抽出テキストは、検索、AI検索、比較、引用補助のために提供する。LUMINA-30正典には含まれず、上記の正典全文抽出を変更しない。
+以下の同一版研究論文抽出テキストは、検索、AI検索、比較、引用補助のために提供する。LUMINA-30正典には含まれず、上記の正典全文抽出を変更しない。
 
-- [The Refusal Option: Effective Human Control Before and Beyond Irreversible AI Transitions - extracted text](./research/The_Refusal_Option_Effective_Human_Control_Before_and_Beyond_Irreversible_AI_Transitions.txt)  
-  Version DOI: https://doi.org/10.5281/zenodo.22980039  
-  Concept DOI: https://doi.org/10.5281/zenodo.22980038  
-  Role: human-standing / effective-refusal / decision-governance research layer supporting, but not defining, the LUMINA-30 boundary framework.
+- [PCR-C v16 — extracted text](./research/Pre_Critical_Recursive_Cutoff_A_Staged_Infrastructure_Control_Framework_for_Irreversibility_Risk_v16.txt)  
+  Version DOI: https://doi.org/10.5281/zenodo.23288056  
+  Concept DOI: https://doi.org/10.5281/zenodo.18824181
 
----
+- [Objective Persistence v3 — extracted text](./research/On_the_Structural_Instability_of_Objective_Persistence_in_Self_Contained_Systems_v3.txt)  
+  Version DOI: https://doi.org/10.5281/zenodo.23282068  
+  Concept DOI: https://doi.org/10.5281/zenodo.19887869
 
+- [L30-RET v1.3 — extracted text](./research/The_Refusal_Option_Effective_Human_Control_Before_and_Beyond_Irreversible_AI_Transitions_v1.3.txt)  
+  Version DOI: https://doi.org/10.5281/zenodo.23282593  
+  Concept DOI: https://doi.org/10.5281/zenodo.22980038
+
+- [PISF v1.2 — extracted text](./research/Pre-Irreversibility_Safety_for_Advanced_AI_v1.2.txt)  
+  Version DOI: https://doi.org/10.5281/zenodo.23283256  
+  Concept DOI: https://doi.org/10.5281/zenodo.23042905
+
+Zenodo current Version DOI remains authoritative for scholarly version identity; these plain-text files are same-version retrieval mirrors for machine/evaluator access.
 
 ## Role in the Citation Chain ｜ 引用導線上の役割
 
