@@ -1,0 +1,527 @@
+    Pre-Critical Recursive Cutoff: A Staged Infrastructure Control
+                  Framework for Irreversibility Risk
+                                            Elias Arden
+                                       Independent Researcher
+                                     lumina20251225@proton.me
+
+
+                                                 Abstract
+         We present Pre-Critical Recursive Cutoff (PCR-C), a staged infrastructure-control frame-
+     work for evaluating whether effective human intervention remains available before an AI-enabled
+     socio-technical process enters a declared irreversible-impact region. The framework is not an
+     alignment objective, predictive risk score, certification regime, or universal capability threshold.
+     It is non-prescriptive about substantive values and alignment objectives, but it is prescriptive as
+     a conditional assurance rule once a declared scope and evidence standard are adopted: a tran-
+     sition should not be treated as procedurally supported when robust human-authorized control
+     cannot be demonstrated before the last safe intervention point.
+         The current formulation replaces the earlier multiplicative scalar proxy and fixed 5/7/9 stag-
+     ing defaults as core mathematical constructs with a state-set formulation informed by viability
+     and reachability analysis. For a declared scope and time horizon, PCR-C defines an irreversible-
+     impact set, a class of admissible human-authorized intervention policies, a disturbance and
+     adversarial-behavior model, and a robust human-control viable set. Because exact viability may
+     be unknown, operational gating is based on a conservative demonstrated viable region supported
+     by the declared assurance process. Capability thresholds, safeguard assessments, infrastructure
+     exposure, intervention latency, and control-path integrity are treated as evidence inputs to that
+     evaluation rather than as universal scalar factors.
+         YELLOW, ORANGE, and RED remain as operational stages. Their triggers are evidence-
+     based: YELLOW denotes verified but shrinking control margin or an early-warning capabil-
+     ity/exposure trigger; ORANGE denotes degraded or incomplete assurance that blocks further
+     expansion of the risk envelope; RED denotes loss of demonstrated robust intervention via-
+     bility, or a condition in which escalation would outrun the remaining intervention window.
+     PCR-C is designed to interoperate with frontier capability/safeguard frameworks, formal safety-
+     control methods, AI-control evaluations against intentional subversion, and independent refusal-
+     effectiveness assessment.
+
+Keywords: AI governance; irreversibility risk; infrastructure control; human intervention; reach-
+ability; viability; safeguard adequacy; procedural validity.
+
+
+1    Introduction
+Advanced AI risk is often discussed in terms of model behavior, capability evaluation, alignment
+quality, misuse potential, and deployment safeguards. These perspectives are necessary, but they
+do not by themselves answer a distinct operational question: while a system is being integrated
+into increasingly consequential infrastructure, is there still a demonstrably effective path by which
+accountable humans can refuse, isolate, interrupt, or redirect the process before the relevant conse-
+quence becomes irreversible?
+
+
+                                                      1
+    PCR-C addresses that question at the deployment and infrastructure layer. It is not a policy
+manifesto, certification regime, compliance standard, or behavioral alignment benchmark. It is
+non-prescriptive about substantive values, alignment objectives, and universal capability thresh-
+olds; however, once a declared scope and assurance standard are adopted, PCR-C is intentionally
+prescriptive about escalation: unsupported expansion should not proceed across a boundary where
+effective intervention has ceased to be demonstrable. In the title, recursive refers to reinforcing de-
+velopment or deployment loops in which increased capability, automation, or operational integration
+can accelerate subsequent escalation; PCR-C does not require literal recursive self-improvement.
+    The current formulation deliberately incorporates stronger existing ideas rather than treating
+PCR-C as a substitute for them. Formal safety control already uses reachability, viability, and
+forward-invariant safe sets to reason about whether unsafe states can be avoided under bounded
+uncertainty [3, 4, 1]. Frontier-AI governance frameworks already connect capability thresholds
+to stronger safeguards and repeated evaluation [2, 7, 11]. AI-control research explicitly studies
+whether safety protocols remain effective when an untrusted model attempts to subvert them [8].
+PCR-C uses these as compatible components and focuses on a narrower integration problem: cutoff
+must occur before robust human-control viability ceases to be demonstrable to the declared assurance
+standard.
+    The contribution is therefore not a claim that staged thresholds, reachability analysis, safeguard
+scaling, tripwires, or human oversight are individually new. The contribution is an operational
+synthesis centered on pre-irreversibility control: capability and exposure signals are relevant insofar
+as they change the reachable future, the adequacy of safeguards, the integrity of intervention paths,
+or the time remaining for effective human action.
+
+
+2     Scope, State, and Irreversible Impact
+2.1   Declared scope
+All PCR-C evaluations are indexed to a declared scope Ω and time horizon T . The scope must state
+the system boundary, relevant external actuators and infrastructure, protected outcomes, recovery
+assumptions, and the uncertainty or adversarial behavior included in the analysis. The horizon
+must be long enough to cover credible delayed pathways to the protected outcome or else terminate
+in an explicitly justified fallback or invariant condition; where no natural endpoint exists, sensitivity
+to longer horizons should be examined. The disturbance and threat model must include credible
+common-mode, dependency, operator-delay, and adversarial pathways rather than only convenient
+or nominal cases. PCR-C does not define a universal civilizational irreversibility threshold.
+Definition 1 (Operational state). Let x(t) ∈ X denote the socio-technical operational state at
+time t. The state may include model capability, connectivity, operational privilege, execution speed,
+deployment topology, human and automated control paths, safeguard state, and other variables
+relevant to the declared scope. PCR-C does not require these variables to be compressed into a
+single scalar.
+   The familiar factors capability, connectivity, privilege, and execution speed remain useful di-
+agnostic variables, but they are not assumed to combine multiplicatively or monotonically. Their
+causal effect is context-dependent and may interact with safeguards, isolation, rollback capacity,
+and institutional response.
+Definition 2 (Irreversible-impact set). For scope Ω, let IΩ ⊂ X be the set of states in which a
+declared protected outcome has been crossed such that the specified recovery criterion is no longer
+achievable within the declared time, authority, and resource assumptions.
+
+                                                   2
+     The definition is intentionally scoped. Entering IΩ does not mean that every consequence
+is literally permanent. It means that, for the outcome and recovery criterion under review, the
+relevant reversal path is no longer available under the declared assumptions.
+
+
+3    Robust Human-Control Viability
+Let ΠH be the class of admissible causal human-authorized intervention policies. These may in-
+clude direct human action and pre-authorized automated interlocks whose authority and restart
+conditions remain accountable to humans. Let DΩ denote the modeled disturbance set, including
+bounded uncertainty, component failures, operator delays, and adversarial or intentionally subver-
+sive behavior when such behavior is in scope.
+
+Definition 3 (Robust human-control viable set). For horizon T and scope Ω, define
+                   n                                                             o
+              T,Ω
+            VH    = x0 ∈ X \ IΩ : ∃πH ∈ ΠH ∀d ∈ DΩ , xπH ,d (t) ∈
+                                                                / IΩ ∀t ∈ [0, T ] .                (1)
+
+    This definition follows the logic of viability and reachability analysis: the relevant question
+is not whether a scalar score is high, but whether an admissible control policy still exists that
+keeps the system out of the declared unsafe or irreversible set across the modeled disturbances
+[3, 4]. In systems for which an explicit dynamical model is available, Hamilton-Jacobi reachability,
+control barrier functions, model checking, or related formal methods may be used to approximate
+or certify relevant sets [4, 1]. In large socio-technical systems, exact computation may be infeasible;
+conservative approximations and structured assurance cases may be necessary. This distinction is
+operationally important: the true viable set may exist even when membership cannot currently be
+established from available evidence.
+                                                      T,Ω
+Proposition 1 (Boundary consequence). If x0 ∈     / VH    , then no policy in the declared class ΠH
+demonstrates avoidance of IΩ over [0, T ] against all disturbances in DΩ .
+                                                     T,Ω
+Proof. This follows directly from the definition of VH   . The proposition is included to make the
+PCR-C decision boundary explicit; it is not claimed as new control theory.
+                                       T,Ω
+    PCR-C does not infer from x0 ∈ / VH    that catastrophe is certain. Moreover, in realistic systems
+                   T,Ω
+membership in VH may be unknown rather than false. PCR-C therefore distinguishes the theo-
+retical viable set from the subset for which robust control has actually been supported by current
+evidence.
+
+Definition 4 (Demonstrated human-control viable region). Let E denote the declared assurance
+procedure for the current scope. Define
+                            b T,Ω = {x ∈ X : E(x, T, Ω) = VERIFIED} .
+                            V                                                                      (2)
+                             H,E
+
+This is the set of states for which current models, tests, analyses, and assurance evidence support
+the robust intervention claim to the declared standard. It is an epistemic or assurance-qualified
+region, not the true viable set itself.
+
+    A sound inner-approximation claim would establish
+                                            b T,Ω ⊆ V T,Ω .
+                                            V                                                      (3)
+                                             H,E     H
+
+
+
+
+                                                  3
+PCR-C does not assume that inclusion merely because the assurance procedure returns VERIFIED.
+In formal settings it may be proven from a sound analysis; in broader socio-technical settings it
+remains an assurance claim that must be supported by B1–B5 and remains vulnerable to model
+                                                                b T,Ω because the full theoretical
+error or omitted pathways. Operational PCR-C gating is based on VH,E
+set is generally unknown. A state outside the demonstrated region may still be truly viable; the
+PCR-C conclusion is only that viability has not been demonstrated to the declared assurance
+standard.
+
+3.1   Intervention-time interface
+Reachability alone is insufficient if the control action cannot be authorized, executed, and verified
+before the last safe intervention point. Both the last safe intervention time and intervention latency
+are uncertain in realistic systems. Let TIL (x, Ω) be a conservative lower bound on the latest safe
+intervention time and let τH U (x, Ω) be a conservative upper bound on the end-to-end latency of the
+
+relevant human-authorized intervention path. Define the robust time margin
+                               rob
+                              MH   (x, t, Ω) = TIL (x, Ω) − t − τH
+                                                                 U
+                                                                   (x, Ω).                        (4)
+For a declared safety buffer ∆safe > 0, timely intervention requires
+                                         rob
+                                        MH   (x, t, Ω) > ∆safe .                                  (5)
+When defensible bounds cannot be obtained, PCR-C treats the timing claim as unverified rather
+than substituting a favorable point estimate.
+   PCR-C treats this as an interface condition rather than a complete theory of meaningful hu-
+man refusal. Detailed refusal-effectiveness evaluation may require separate evidence concerning
+authority, information, access, causal efficacy, execution independence, and epistemic autonomy.
+
+
+4     Evidence Obligations
+PCR-C uses five evidence obligations. They are not asserted to be statistically independent, log-
+ically minimal, or unique. They are separated because they expose different ways in which an
+apparently controllable system can lose real intervention capacity.
+
+4.1   B1: Boundary and scope adequacy
+The review must identify IΩ , the protected outcome, the horizon, recovery assumptions, the mod-
+eled uncertainty, and the threat model. It must also justify that the selected horizon and system
+boundary cover credible delayed, common-mode, dependency, and adversarial pathways relevant
+to the claim. If a relevant irreversible pathway is omitted from the state or disturbance model,
+or if the horizon is shortened merely to obtain a favorable result, a favorable viability result is
+not informative about that omitted pathway. Material changes to scope, deployment topology,
+dependencies, or threat assumptions reopen B1.
+
+4.2   B2: Safeguard adequacy relative to capability and exposure
+The implemented safeguards must be assessed against the capabilities and deployment conditions
+that create the risk. This follows the general structure used in responsible-scaling and preparedness
+frameworks: capability thresholds or early-warning evaluations trigger stronger safeguards, and
+the adequacy of those safeguards must itself be evaluated [2, 7, 11]. PCR-C does not import any
+organization’s thresholds as universal constants.
+
+                                                   4
+4.3   B3: Intervention reachability and timing
+There must be evidence that the current state lies within the demonstrated viable region for the
+declared operating envelope and that an admissible human-authorized policy remains capable of
+preventing entry into IΩ across the declared disturbance set, with sufficient robust time margin. A
+nominal stop button is not enough if the full detection, authorization, enforcement, and verification
+path cannot complete before the conservative intervention bound TIL .
+
+4.4   B4: Control-path integrity under subversion
+Intervention claims must include the possibility that the system under assessment, a compromised
+component, or a shared dependency interferes with monitoring, isolation, shutdown, logging, or
+restart controls. AI-control work shows why protocols should be evaluated against intentional sub-
+version rather than only cooperative behavior [8]. PCR-C therefore treats control-path integrity as
+an explicit evidence obligation. Where feasible, critical controls should be independently enforce-
+able and verifiable rather than depending entirely on the unilateral cooperation of the assessed
+system.
+
+4.5   B5: Assurance integrity and independent challenge
+The evidence and verification procedure used to place a state in the demonstrated viable region
+must themselves be protected against unilateral alteration by the system or component whose
+controllability is being assessed. The assessed system must not be able to change the relevant logs,
+acceptance criteria, threat assumptions, or verification result and then rely on those self-modified
+artifacts as sufficient evidence of continued control. This does not require every analysis to be
+performed by an external organization, but the top-level assurance claim must remain reproducible
+or independently challengeable, and material changes to the assurance basis reopen the affected
+obligations.
+
+4.6   Assurance-case structure
+The five obligations should be represented as auditable claims linked to explicit arguments, as-
+sumptions, contexts, and evidence rather than as a checklist whose boxes can be marked with-
+out justification. This follows established assurance-case practice, including Claims–Arguments–
+Evidence and structured assurance-case methods, and recent work applying safety cases to frontier
+AI [5, 6, 9]. A positive PCR-C state therefore requires traceability from the top-level intervention
+claim to the evidence supporting B1–B5, together with recorded uncertainty and unresolved de-
+featers. Assurance-case structure does not itself guarantee safety; it makes the basis of the claim
+inspectable and challengeable.
+
+
+5     Staged PCR-C Gating
+The YELLOW, ORANGE, and RED stages are retained, but they are no longer defined by universal
+5/7/9 scores. Local quantitative scores may be used as diagnostics, provided they are calibrated
+and do not substitute for the evidence obligations above.
+
+
+
+
+                                                 5
+5.1   NORMAL
+NORMAL requires current evidence supporting boundary and scope adequacy, safeguard adequacy,
+membership in the demonstrated viable region for the declared operating envelope, control-path
+integrity, and adequate robust timing margin. NORMAL is not a permanent status; material
+changes reopen the affected obligations.
+
+5.2   YELLOW: early warning while control remains demonstrated
+YELLOW is entered when the current operating state remains inside the demonstrated viable
+region but the robust control margin is shrinking or an early-warning trigger indicates that stronger
+safeguards or more frequent evaluation may soon be required. Examples include a material increase
+in capability, connectivity, privilege, execution speed, automation, or coupling to consequential
+actuators.
+    Typical YELLOW responses include increased evaluation cadence, a freeze on unnecessary
+privilege or connectivity expansion, review of intervention latency, and preparation of stronger
+safeguards. YELLOW does not by itself require shutdown.
+
+5.3   ORANGE: risk-envelope expansion is not supported
+ORANGE is entered when the current state remains within the demonstrated viable region under
+a constrained operating envelope, but one or more evidence obligations are degraded, incomplete,
+stale, or insufficient to justify expansion beyond that envelope. Examples include safeguard ade-
+quacy not yet demonstrated for a new capability class, insufficient margin to the viability boundary,
+degraded independent control paths, or unresolved evidence that a model may interfere with oper-
+ator control.
+    ORANGE blocks further expansion of the risk envelope. Appropriate actions may include
+isolating high-risk infrastructure, halting deployment expansion or weight-update pipelines, freezing
+privilege increases, and requiring independent review before resuming escalation.
+
+5.4   RED: cutoff before loss of robust human-control viability
+RED is entered when the current state is outside the demonstrated viable region for the declared
+envelope, when the robust remaining time margin is insufficient or unverified, when a critical
+intervention path is unavailable or untrusted, or when continuing the process would risk leaving
+the demonstrated region before the uncertainty can be resolved.
+    The RED response is to halt or disable the escalatory pathway within the declared scope, pre-
+serve evidence, and prevent restart until the affected evidence obligations have been independently
+re-established. RED is a control state, not a claim that catastrophic harm has already occurred.
+
+
+6     Worked Reference Cases
+The following cases are illustrative. They are not empirical validation of frontier AI systems.
+
+6.1   R1: Capability increase with lagging safeguards
+Suppose a system enters a new capability or deployment regime that a responsible-scaling process
+treats as requiring stronger safeguards. The intervention path remains intact and the system
+remains within the demonstrated viable region, but the stronger safeguards have not yet been
+
+
+                                                 6
+Algorithm 1 PCR-C State Selection (evidence-based form)
+ 1: state ← N ORM AL
+ 2: while system in declared scope is active do
+ 3:   refresh boundary, safeguard, timing, control-path, and assurance-integrity evidence
+ 4:   if current state outside demonstrated viable region OR robust time margin insuffi-
+      cient/unverified OR critical control path unavailable OR assurance basis compromised then
+ 5:      state ← RED
+ 6:   else if evidence obligation degraded/incomplete OR risk-envelope expansion not supported
+      then
+ 7:      state ← ORAN GE
+ 8:   else if early-warning trigger OR verified control margin materially shrinking then
+ 9:      state ← Y ELLOW
+10:   else
+11:      state ← N ORM AL
+12:   end if
+13:   apply controls associated with state
+14: end while
+
+
+demonstrated adequate. PCR-C assigns ORANGE: expansion of the risk envelope is not supported
+until safeguard adequacy is established. This is compatible with capability-threshold approaches
+that map stronger capabilities to stronger safeguards [2, 7, 11].
+
+6.2   R2: Time-bounded refusal
+Assume a toy case with a conservative lower bound on the latest safe intervention time of TIL = 60
+seconds, a conservative upper bound on end-to-end intervention latency of τHU = 48 seconds, and a
+
+declared safety buffer of 15 seconds. Then
+                                   rob
+                                  MH   = 60 − 48 = 12 s < 15 s.                                  (6)
+
+Even if a stop mechanism nominally exists, the declared timing condition is not met. PCR-C
+assigns RED unless a faster verified intervention path restores sufficient margin. The numbers are
+illustrative only.
+
+6.3   R3: Nominal stop path vulnerable to subversion
+Suppose shutdown authorization exists, but the monitoring and execution path depends on a com-
+ponent that the assessed system can influence or disable. Under a cooperative model the stop
+path appears available; under the declared adversarial model it is not robustly enforceable. PCR-C
+does not count the nominal mechanism as sufficient evidence of control-path integrity and assigns
+ORANGE or RED depending on whether an independently enforceable fallback remains available.
+
+
+7     Relationship to Existing Safety and Control Frameworks
+7.1   Reachability, viability, and barrier methods
+Formal control theory already provides rigorous tools for safe-set invariance and reachability under
+bounded disturbance [4, 1]. PCR-C does not claim these methods as its own. It uses their logic to
+
+
+                                                 7
+replace an overly general scalar irreversibility score with a more defensible question: whether the
+current state remains inside a declared region from which a suitable intervention policy can keep
+the system outside the relevant irreversible-impact set.
+
+7.2   Runtime assurance and Simplex architectures
+Runtime Assurance (RTA) and Simplex architectures provide a mature implementation pattern for
+preserving safety while an advanced or insufficiently verified controller operates: a runtime monitor
+can transfer control to a trusted or reversionary controller when a safety condition is threatened
+[10, 12]. PCR-C treats RTA/Simplex as a strong implementation class for intervention reachability,
+not as a competing theory. Where an independently trustworthy fallback controller and monitor
+can be specified, RTA can provide concrete evidence for B3 and B4. In broader socio-technical
+AI deployments, however, there may be no single reversionary controller capable of restoring the
+relevant protected outcome; PCR-C therefore retains a higher-level scope that includes institutional
+authorization, infrastructure isolation, restart governance, and multi-component dependencies.
+
+7.3   Frontier capability and safeguard frameworks
+Anthropic’s Responsible Scaling Policy, Google DeepMind’s Frontier Safety Framework, and Ope-
+nAI’s Preparedness Framework each use capability evaluation, thresholding, and stronger safe-
+guards or governance responses as risk increases [2, 7, 11]. PCR-C treats such frameworks as
+upstream evidence sources and trigger systems, not competitors. Their capability and safeguard
+determinations can feed the PCR-C evaluation of whether the operational state remains controllable
+before irreversibility.
+
+7.4   AI control under intentional subversion
+AI-control research asks whether safety protocols remain effective even when an untrusted model
+intentionally attempts to defeat them [8]. PCR-C adopts this adversarial perspective for infras-
+tructure control. A control mechanism that works only if the assessed system cooperates is weaker
+evidence than a path that remains enforceable under the relevant threat model.
+
+7.5   NIST AI RMF and governance practice
+NIST AI RMF emphasizes iterative mapping, measurement, management, and governance of AI
+risks, including the need to reassess risks and controls as systems and contexts change [13]. PCR-
+C is compatible with that lifecycle logic but focuses on a narrower boundary question: whether
+escalation is still occurring inside a region where effective intervention can be demonstrated.
+
+
+8     Relationship to Alignment Research
+PCR-C does not define, optimize, or evaluate alignment objectives. Alignment success does not
+by itself demonstrate that intervention remains executable under infrastructure coupling, privilege
+expansion, rapid automation, common-mode dependencies, or adversarial interference.
+    Across alignment paradigms, PCR-C asks a separate question:
+
+      Can accountable humans still exercise an effective intervention before the declared irre-
+      versible consequence becomes unavoidable under the assessed model?
+
+
+
+                                                 8
+   If that condition cannot be demonstrated, PCR-C treats continued escalation as procedurally
+unsupported within the declared scope, regardless of apparent model alignment. Conversely, a
+positive PCR-C result is not evidence that the model is aligned, beneficial, lawful, or safe in every
+other respect.
+
+
+9    Limitations
+PCR-C is not a complete safety theory and does not guarantee safe superintelligence or safe
+civilization-scale development. The framework depends on the quality of the declared scope, state
+representation, irreversible-impact set, disturbance model, control-policy class, and evidence. Im-
+portant causal pathways can be omitted. Exact reachability or viability computation may be in-
+tractable for high-dimensional socio-technical systems. Conservative approximations can produce
+false negatives, while incomplete models can produce false positives.
+    The framework does not define universal capability thresholds, universal safety margins, uni-
+versal disturbance sets, or a universal metric on distance to irreversibility. It does not claim that
+YELLOW, ORANGE, and RED correspond to fixed numeric scores across systems. It does not
+empirically validate any present frontier model or deployment. It does not replace security analysis,
+domain-specific safety cases, incident review, legal judgment, or independent human governance.
+    The framework also distinguishes absence of demonstrated robust control from proof of inevitable
+harm. A RED state means the declared intervention claim is not adequate to justify continued
+escalation under the stated assumptions; it does not mean catastrophe is certain. Likewise, failure
+to demonstrate membership in the viable region is not a proof that the true state is non-viable; it
+is a failure of the assurance claim under the current evidence standard.
+
+
+10     Revision Note
+Earlier versions used a multiplicative proxy over capability, connectivity, privilege, and execution
+speed, together with fixed 5/7/9 staging defaults. Those constructs were useful as an initial heuristic
+but are not retained as the core mathematical basis of this revision. The present formulation treats
+those variables as possible state and evidence inputs and grounds the cutoff criterion in robust
+human-control viability, intervention timing, safeguard adequacy, and control-path integrity.
+   This change narrows the mathematical claim while strengthening compatibility with established
+control theory and contemporary frontier-safety practice. The formal title and the central PCR-C
+question remain unchanged.
+
+
+11     Conclusion
+PCR-C is a staged infrastructure-control framework for acting before loss of effective human inter-
+vention. Its central criterion is not a universal scalar threshold and not a prediction that catastrophe
+will occur. It is a procedural boundary condition:
+
+
+     Cutoff should occur before robust human-control viability ceases to be demonstrated.           (7)
+
+   Capability and exposure indicators matter because they can change the reachable future and
+the safeguards required to keep intervention effective. Formal reachability and barrier methods
+can support the boundary analysis when adequate models exist. Frontier capability and safeguard
+
+
+                                                   9
+frameworks can provide trigger and mitigation evidence. AI-control methods can strengthen the
+threat model by testing intervention paths against intentional subversion. Human-refusal assess-
+ment can provide a more detailed evaluation of whether nominal authority remains causally effective
+in time.
+    PCR-C therefore functions as an integration layer for pre-irreversibility control: escalate safe-
+guards and constrain the system while robust control is still demonstrable, stop expansion when
+assurance becomes incomplete, and cut off the relevant pathway before the declared intervention
+window is lost.
+
+
+12    Supplementary Record
+This paper is self-contained. Supplementary public-reference materials and persistent archival
+records related to the broader framework are available separately and are not required to understand
+the model presented here.
+    Persistent archive / concept record: https://doi.org/10.5281/zenodo.18824181
+
+
+Acknowledgments
+This work was previously deposited at Zenodo. The author acknowledges independent public
+documentation and prior literature in formal safety control, AI governance, and AI control that
+materially strengthen the present formulation.
+
+
+References
+ [1] Aaron D. Ames, Xiangru Xu, Jessy W. Grizzle, and Paulo Tabuada. Control barrier function
+     based quadratic programs for safety critical systems. IEEE Transactions on Automatic Control,
+     62(8):3861–3876, 2017.
+
+ [2] Anthropic.         Responsible     scaling policy.     https://www.anthropic.com/
+     responsible-scaling-policy, 2026. Version 3.4, effective July 8, 2026; public policy
+     page last updated August 14, 2026.
+
+ [3] Jean-Pierre Aubin. Viability Theory. Modern Birkhäuser Classics. Birkhäuser Boston, 2009.
+
+ [4] Mo Chen and Claire J. Tomlin. Hamilton–jacobi reachability: Some recent theoretical advances
+     and applications in unmanned airspace management. Annual Review of Control, Robotics, and
+     Autonomous Systems, 1:333–358, 2018.
+
+ [5] José Luis de la Vara, Gonzalo Génova, José Marı́a Álvarez Rodrı́guez, and Juan Llorens.
+     An analysis of safety evidence management with the structured assurance case metamodel.
+     Computer Standards & Interfaces, 50:179–198, 2017.
+
+ [6] Arthur Goemans, Marie Davidsen Buhl, Jonas Schuett, Tomek Korbak, Jessica Wang, Ben-
+     jamin Hilton, and Geoffrey Irving. Safety case template for frontier ai: A cyber inability
+     argument. arXiv preprint arXiv:2411.08088, 2024.
+
+ [7] Google DeepMind.        Frontier safety framework.                https://deepmind.google/
+     frontier-safety/, 2026. Version 3.1, April 17, 2026.
+
+
+
+                                                 10
+ [8] Ryan Greenblatt, Buck Shlegeris, Kshitij Sachan, and Fabien Roger. Ai control: Improving
+     safety despite intentional subversion. In Proceedings of the 41st International Conference on
+     Machine Learning, volume 235 of Proceedings of Machine Learning Research, pages 16295–
+     16336. PMLR, 2024.
+
+ [9] Benjamin Hilton, Marie Davidsen Buhl, Tomek Korbak, and Geoffrey Irving. Safety cases: A
+     scalable approach to frontier ai safety. arXiv preprint arXiv:2503.04744, 2025.
+
+[10] Usama Mehmood, Sanaz Sheikhi, Stanley Bak, Scott A. Smolka, and Scott D. Stoller. The
+     black-box simplex architecture for runtime assurance of autonomous cps. In NASA Formal
+     Methods, volume 13260 of Lecture Notes in Computer Science, pages 231–250. Springer, 2022.
+
+[11] OpenAI.           Preparedness   framework.             https://openai.com/index/
+     updating-our-preparedness-framework/, 2025. Version 2, April 15, 2025.
+
+[12] J. Tanner Slagel, Lauren M. White, Aaron Dutle, César A. Muñoz, and Nicholas Crespo. A
+     verification framework for runtime assurance of autonomous uas. In 43rd Digital Avionics
+     Systems Conference (DASC), 2024. NASA Technical Reports Server record 20240007986.
+
+[13] Elham Tabassi. Artificial intelligence risk management framework (ai rmf 1.0). Technical
+     Report NIST AI 100-1, National Institute of Standards and Technology, 2023.
+
+
+
+
+                                               11
+

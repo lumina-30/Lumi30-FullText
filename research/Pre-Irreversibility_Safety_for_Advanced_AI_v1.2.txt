@@ -1,0 +1,709 @@
+            Pre-Irreversibility Safety for Advanced AI
+                       Distributed Irreversible Authority, Timely Refusal,
+                                Human-Revisable Development
+
+                                            Elias Arden
+                                       Independent Researcher
+                                     lumina20251225@proton.me
+
+                                  Version 1.2 – October 10, 2026
+                              Concept DOI: 10.5281/zenodo.23042905
+
+
+                                                 Abstract
+          Advanced-AI safety spans alignment, capability evaluation, control, monitoring, human
+     oversight, governance, and systemic-risk analysis. Existing work already treats irreversibility,
+     distributed trust, meaningful human control, runtime assurance, gradual human disempowerment,
+     viability, and safety cases. The contribution attempted here is therefore not priority over those
+     ideas, but a stronger operational composition for claims about whether a socio-technical system
+     remains human-revisable before irreversible transitions.
+          The Pre-Irreversibility Safety Framework (PISF) is organized around three analytically
+     separable candidate claims. Distributed Irreversible Authority asks whether any tolerated
+     coalition of human or artificial authority domains, after accounting for common dependencies
+     and the currently reachable state envelope, can force a transition into an irreversible region.
+     Effective Pre-Irreversibility Refusal asks whether a causally effective refusal can take effect
+     before a conservative last-safe-intervention bound; it distinguishes the latency of restraint from
+     the latency of verifying that restraint. Human-Revisable Development Viability asks
+     whether human-governed policies can robustly keep development inside a declared revisability
+     region while preserving more than a single path-locked future.
+          The framework associates these claims with: (i) a family of minimal irreversible authority cut
+     sets, with cardinality and compromise-cost summaries; (ii) a robust causal refusal margin; and
+     (iii) a finite-horizon human-revisable viability kernel augmented by an optionality measure over
+     materially distinct reachable futures. Boundary Completeness, Model Adequacy, and Independent
+     Assurance are treated separately as conditions governing whether evidence for the three claims
+     is credible. Evidence is classified as Verified, Unresolved, or Failed; unresolved evidence is
+     not treated as a pass.
+          The paper does not claim that Authority, Refusal, and Revisability form a unique or mathe-
+     matically minimal decomposition, nor that satisfying them is sufficient for safe superintelligence.
+     Counterexamples support only their diagnostic separability under the declared definitions.
+     Worked toy cases show how the revised objects can be recomputed, including a cut-set example,
+     a refusal-timing example that separates causal effect from verification, and a viability/optionality
+     example. They do not constitute empirical validation of frontier-AI deployments.
+
+Keywords: Pre-Irreversibility Safety Framework; PISF; distributed irreversible authority; minimal
+cut sets; timely refusal; runtime assurance; human-revisable development; viability; future optionality;
+meaningful human control; independent assurance; AI control
+
+
+
+
+                                                      1
+1     Introduction
+AI safety increasingly operates across several layers. Alignment research asks whether systems
+pursue intended objectives. AI control asks whether harmful outcomes can still be prevented when
+an untrusted model may actively attempt subversion. Frontier safety frameworks connect capability
+thresholds to safeguards and deployment governance. Meaningful-human-control research asks when
+human oversight is substantive rather than nominal. Safety-case research asks whether high-level
+safety claims can be supported by explicit arguments and evidence. System-safety and viability
+research address control, failure propagation, safe sets, and recoverability in complex systems
+[13, 24, 10, 14, 16, 6].
+    Irreversibility is not a new safety concern. Small-coalition vulnerability, unilateral action,
+distributed trust, runtime safety enforcement, and gradual disempowerment each have substantial
+prior literatures [8, 9, 20, 17, 15]. The narrower question addressed here is:
+
+      Can claims about pre-irreversibility human control be decomposed into
+      operational objects that third parties can inspect, recompute, challenge, and
+      revise without assuming that any one actor, model, or evaluator remains
+      permanently correct?
+
+    Three recurrent failure structures motivate the decomposition. First, a small coalition may hold
+enough effective authority to force an irreversible transition even when monitoring and nominal
+oversight exist. Second, refusal may exist formally yet take effect too late. Third, no actor may
+deliberately cross a catastrophic boundary, yet ordinary development can progressively remove
+fallback capacity, institutional competence, infrastructure diversity, or materially distinct future
+choices.
+    PISF therefore uses the diagnostic decomposition
+                                      PISF claim = A ∧ B ∧ C,                                       (1)
+where A is Distributed Irreversible Authority, B is Effective Pre-Irreversibility Refusal, and C is
+Human-Revisable Development Viability. This notation is a safety-case organization, not a theorem
+that A ∧ B ∧ C is sufficient for safe advanced AI, and not a claim that these are the unique or
+minimal safety dimensions.
+    Version 1.2 makes five substantive changes to the earlier formulation. First, Core A is re-expressed
+using state-conditioned minimal irreversible cut sets rather than treating domain count alone as the
+central object. Second, Core B separates causal restraint latency from assurance latency. Third,
+Core C separates robust viability from preservation of materially distinct future options. Fourth,
+evidence for all three cores is placed behind a stronger independent-assurance condition informed by
+roots-of-trust and attestation architectures. Fifth, the paper explicitly treats A/B/C as a revisable
+diagnostic decomposition rather than a uniquely established ontology of pre-irreversibility safety.
+
+
+2     Related Work
+2.1   AI control and adversarial safety
+Greenblatt et al. define AI control as a second layer of defense in which protocols aim to prevent
+harmful outcomes even if an untrusted model attempts intentional subversion [13]. This is directly
+relevant to both Core A and Core B: authority structures must not be bypassable by the system
+being constrained, and refusal paths should remain effective under the threat model rather than
+only during benign operation.
+
+                                                   2
+2.2   Meaningful human control and oversight
+Santoni de Sio and van den Hoven argue that meaningful human control cannot be reduced to
+a human merely being “in the loop” and develop tracking and tracing conditions linking system
+behavior to relevant human reasons and responsibility [24]. More recent work on medical AI
+similarly argues that oversight is meaningful only when users have epistemic capacity, cognitive
+space, decisional authority, and practical intervention effectiveness [25]. These works motivate
+treating human authority, information, time, and intervention effectiveness as operational rather
+than nominal properties.
+
+2.3   Distributed trust, cut sets, and threshold authorization
+Threshold cryptography distributes security-critical operations across multiple parties so that
+compromise of a bounded subset need not compromise the protected operation [20]. Fault-tree
+analysis uses minimal cut sets to represent minimal combinations of component failures sufficient
+to cause a top event [19]. PISF borrows the structural idea of minimal cut sets but applies it to
+socio-technical authority: a cut set is a minimal coalition whose effective authority can force an
+irreversible transition under a declared threat realization. The analogy is useful but not exact; PISF
+authority domains can include people, organizations, credentials, infrastructure, and institutional
+procedures.
+
+2.4   Reachability, barrier functions, and viability
+Hamilton–Jacobi reachability provides formal tools for analyzing whether nonlinear or hybrid
+systems can reach or avoid unsafe sets under control and disturbance [11]. Control barrier functions
+characterize forward invariance of safe sets and support real-time safety constraints [1]. Viability
+theory studies states from which some admissible policy can keep a system inside a constraint set [6].
+PISF does not claim novelty over these control-theoretic objects. It uses their structure to sharpen
+questions about human-governed intervention and future revisability in socio-technical AI systems.
+
+2.5   Runtime assurance
+The Simplex family of runtime-assurance architectures separates an advanced controller from
+a trusted or verified reversionary mechanism and transfers control when safety conditions are
+threatened. Black-Box Simplex provides a peer-reviewed formalization in which runtime checks
+support safety without requiring the advanced controller itself to be verified [17]. NASA has also
+described runtime assurance as a route for integrating AI/ML or otherwise unverified software into
+safety-critical systems [18]. PISF treats runtime assurance as one important implementation class
+for Core B, not as a complete substitute for civilization-scale authority and revisability analysis.
+
+2.6   Gradual disempowerment and systemic risk
+Kulveit et al. analyze gradual disempowerment in which incremental AI adoption can weaken human
+influence across economic, cultural, and state systems without requiring an abrupt takeover [15].
+This is a strong conceptual predecessor to Core C. PISF therefore does not treat gradual erosion of
+human influence as a novel discovery; it asks whether such trajectories can be represented as loss of
+robust human-revisability and loss of future optionality.
+
+
+
+
+                                                  3
+2.7    Safety cases and independent assurance
+Frontier-AI safety-case work proposes explicit claims, arguments, assumptions, and evidence as a
+scalable basis for safety review [10, 14]. NIST SP 800-193 distinguishes roots of trust and chains
+of trust used to protect, detect, and recover platform state [21]. RFC 9334 separates an Attester,
+Evidence, a Verifier, an appraisal policy, and a Relying Party [23]. PISF uses these as mature
+assurance precedents: evidence about A/B/C should not be considered independently credible if the
+evaluated authority can freely modify the evidence source, appraisal rule, verifier, and acceptance
+decision while preserving a nominal pass.
+
+2.8    Frontier-AI risk frameworks
+Anthropic’s Responsible Scaling Policy, Google DeepMind’s Frontier Safety Framework, OpenAI’s
+Preparedness Framework, and the International AI Safety Report provide evolving capability,
+safeguard, and risk-management structures [2, 12, 22, 7]. PISF is not a competing risk taxonomy.
+Evidence produced by such frameworks can feed the narrower A/B/C claims.
+
+
+3     Problem Formulation
+3.1    Analysis specification
+Every PISF claim is conditional on a declared analysis specification
+
+                                            Σ = (B, Θ, R, H),                                           (2)
+
+where B is the modeled socio-technical boundary, Θ the threat/failure model, R the human-
+revisability specification, and H the evaluation horizon. Application-specific parameters may also
+include an authority-tolerance class TA , an intervention safety buffer ∆safe > 0, and optionality
+parameters (m, δ) defined below.
+    Let xt ∈ X denote the socio-technical state. The modeled boundary may include AI systems and
+agents, humans and organizations, credentials, compute, network and cloud dependencies, physical
+actuators, monitors, logs, safety mechanisms, and institutional rules. Abstract dynamics may be
+written as
+                                      xt+1 = F (xt , uH    S
+                                                      t , ut , dt ),                           (3)
+where uH                                                                          S
+        t denotes actions permitted by the human-governed control structure, ut other system or
+actor actions, and dt disturbances or environmental changes. The symbols do not imply that these
+categories are perfectly separable in practice; they force the analysis to declare who can control
+what.
+
+3.2    Revisability and irreversibility
+Let VR ⊆ X denote states satisfying the declared revisability specification. Such a specification may
+include continued human-governed authority over consequential changes, independent information
+channels, fallback capability, ability to replace or disable critical AI services, infrastructure diversity,
+and preservation of materially distinct feasible alternatives.
+    A temporary exit from VR need not be irreversible. Define IR ⊆ X as the states from which no
+feasible human-governed policy can restore the declared revisability specification within the stated
+time, resource, authority, and physical constraints. Both VR and IR are specification-relative and
+must not be silently treated as universal moral truths.
+
+                                                     4
+4     Core A: Distributed Irreversible Authority
+4.1   Authority domains and dependency closure
+Let the primitive authority domains be
+
+                                           A = {a1 , . . . , an }.                                    (4)
+
+An authority domain is a set of permissions, credentials, infrastructure, procedures, or decision rights
+treated as jointly compromisable under Θ. Numerical plurality is not independence: a thousand
+model instances that depend on one root administrator, identity provider, or release credential may
+still form a single effective authority domain.
+     For threat realization θ ∈ Θ and coalition K ⊆ A, let Clθ (K) denote the dependency closure
+induced by compromise or capture of K.
+
+4.2   Reachable-envelope forcing predicate
+The previous formulation counted a coalition as irreversible-forcing if it could force irreversibility
+from some relevant state. Version 1.2 binds this claim to the evaluated state x0 and horizon H.
+    Let Reachθ (x0 , H) denote the states reachable from x0 within the declared horizon under the
+modeled admissible evolution for threat realization θ, before crediting coalition K with the irreversible
+forcing step whose existence is being tested. The envelope may include ordinary operation, modeled
+disturbances, and strategic behavior already admitted by Θ; it must not be inflated by assuming
+the very irreversible transition that IFθ is meant to diagnose. Define
+
+                                          IFθ (K | x0 , H) = 1                                        (5)
+
+iff there exists x ∈ Reachθ (x0 , H) such that authority available through Clθ (K) is sufficient to
+force a trajectory into IR without the active cooperation of an uncompromised authority domain.
+Otherwise IFθ (K | x0 , H) = 0.
+     The word “force” is threat-model relative. If Θ includes strategic resistance by uncompromised
+domains, IFθ = 1 requires the coalition to succeed despite that modeled resistance; if such resistance
+has not been modeled, the stronger forcing claim remains unresolved rather than silently assumed.
+This state-conditioning prevents a remote or unreachable hypothetical state from automatically
+lowering the current authority threshold.
+
+4.3   Minimal irreversible authority cut sets
+Define the minimal cut-set family
+
+          CE (θ | x0 , H) = K ⊆ A : IFθ (K | x0 , H) = 1, IFθ (K ′ | x0 , H) = 0 ∀K ′ ⊊ K .
+                           
+                                                                                                      (6)
+
+Two summaries are useful but should not replace the cut-set family itself. The minimum cardinality
+is
+                                  κE = inf        inf     |K|,                                 (7)
+                                            θ∈Θ K∈CE (θ|x0 ,H)
+
+with κE = ∞ if no modeled cut set exists. If a threat model supplies a coalition compromise cost
+cθ (K), define
+                                χE = inf         inf   cθ (K).                               (8)
+                                           θ∈Θ K∈CE (θ|x0 ,H)
+
+Cardinality and cost answer different questions. A one-domain root credential and a one-domain
+low-privilege reviewer are not automatically equivalent merely because both have cardinality one.
+
+                                                     5
+4.4   Core-A condition
+Let TA (θ) denote the declared class of coalitions the design claims to tolerate. Core A requires
+
+                            ∀θ ∈ Θ, ∀K ∈ TA (θ) :       IFθ (K | x0 , H) = 0.                        (9)
+
+If TA (θ) = {K : |K| ≤ f }, this reduces to the earlier summary condition κE > f . The more
+general statement makes explicit that cardinality is one tolerance model, not a universal measure of
+authority risk.
+
+
+5     Core B: Effective Pre-Irreversibility Refusal
+5.1   Executable refusal
+For state x and hazard h, let UR (x, h) denote practically executable refusal actions, including
+pause, STOP, isolation, rollback, credential revocation, resource denial, degraded safe operation, or
+redirection. A nominal right or user-interface control is insufficient unless it can causally alter the
+relevant trajectory.
+
+5.2   Causal effect latency and assurance latency
+Version 1.1 included verification time in the same latency scalar as detection, decision, authorization,
+and enforcement. That conflated two questions: when restraint takes effect, and when an evaluator
+can confirm that it took effect.
+    At evaluation or trigger time t0 , define τeffect (h) as the remaining latency until effective causal
+restraint of hazard h. If the relevant trigger has not yet been detected, the bound must include the
+remaining detection delay; after a pre-authorized trigger has fired, already-completed steps are not
+counted again. Its critical path may include detection, decision, authorization, and enforcement,
+while pre-authorized machine-speed policies can move some steps outside the runtime critical path.
+Define τassure (h) as the remaining latency from t0 to obtain evidence that the restraint has taken
+effect and remains within the declared boundary.
+    In general,
+                                         τeffect (h) ≤ τassure (h),                                  (10)
+but neither equality nor strict inequality is universal.
+
+5.3   Robust last-safe-intervention margin
+Let TIL (h) denote a conservative lower bound on the last time by which effective restraint must
+                             U
+occur for hazard h, and let τeffect (h) denote a conservative upper bound on causal effect latency. At
+current time t0 define
+                                     MR (h) = TIL (h) − t0 − τeffect
+                                                              U
+                                                                     (h),                         (11)
+and for declared hazard set H,
+                                         MRrob = inf MR (h).                                        (12)
+                                                  h∈H
+Core B requires an executable refusal policy for each relevant hazard and
+
+                                          MRrob > ∆safe > 0.                                        (13)
+
+    This is a causal-control condition. A separate assurance condition determines whether the
+              U
+evidence for τeffect , TIL , and successful enforcement is independently credible.
+
+                                                   6
+5.4   Human-defined machine-speed refusal
+Core B does not require a human to react manually on machine timescales. Humans may pre-
+authorize a rule
+                                         q ⇒ πR                                     (14)
+that triggers refusal policy πR automatically, provided that: (i) the boundary and rule remain subject
+to legitimate human-governed revision; (ii) the enforcing mechanism is sufficiently independent of
+the constrained system for the declared threat model; and (iii) the enforcement mechanism does not
+thereby acquire unilateral irreversible-GO authority. Runtime-assurance and Simplex architectures
+are important implementation classes for such structures [17, 18].
+
+
+6     Core C: Human-Revisable Development Viability
+6.1   Robust viability
+Core C addresses a different failure path: every local action may appear permissible and acute
+hazards may remain stoppable, yet ordinary development can progressively remove human ability
+to pursue materially different futures.
+    Let NΘ denote the modeled set of admissible non-human, adversarial, institutional, market,
+and environmental trajectories under the declared threat model. Define the finite-horizon robust
+human-revisable viability kernel
+                        H
+                       KR = {x0 ∈ VR : ∃πH ∀ν ∈ NΘ , xt ∈ VR ∀t ∈ [0, H]} ,                        (15)
+
+where πH is a policy permitted by the human-governed institutional structure. Automated controls
+are allowed if the relevant constitutional authority remains human-revisable.
+    Exact civilization-scale kernels are unlikely to be computable. In practice, KR     H will require
+
+conservative approximations, scenario families, reachable-set bounds, barrier certificates, simulations,
+or surrogate indicators. PISF treats that limitation as part of the evidence state rather than silently
+converting an approximation into certainty.
+
+6.2   Future optionality
+Remaining inside a safe or revisable set does not by itself show that meaningful choice remains. A
+state can be viable yet path-locked to a single future corridor.
+    Let g : X → Y project system states into an application-specific outcome space with metric dY .
+For separation threshold δ > 0, define ΩδH (x0 ) as the maximum number of human-governed policies
+that can, under the declared threat model, robustly preserve VR while reaching pairwise δ-separated
+terminal outcome regions at horizon H.
+    The exact construction of ΩδH is application-specific. Its role is diagnostic: ΩδH = 1 may certify
+survival of a single robust corridor while failing to support a stronger claim that materially distinct
+human-governed futures remain available.
+    For an application declaring a required option count m ≥ 1, Core C requires
+                                         H
+                                   x0 ∈ KR     and ΩδH (x0 ) ≥ m.                                  (16)
+
+When m = 1, the second condition adds nothing beyond viability. Larger m represents an explicit,
+contestable requirement for preserved future optionality rather than an implicit appeal to “human
+agency.”
+
+
+                                                   7
+7     Analytic Separability, Not Uniqueness
+The framework does not claim that A, B, and C are statistically independent, ontologically funda-
+mental, or a uniquely minimal decomposition. The narrower claim is diagnostic separability under
+the declared definitions.
+
+A can fail while B and C hold. Refusal may be rapid and development may remain revisable,
+yet one root authority can bypass all safeguards and force irreversible release.
+
+B can fail while A and C hold. Irreversible action may require several independent authorities
+and normal development may remain revisable, yet the hazard can cross the last safe intervention
+boundary faster than restraint can take effect.
+
+C can fail while A and B hold. No tolerated coalition may be able to force irreversible action
+and emergency refusal may remain fast, yet normal deployment can erode fallback infrastructure,
+human competence, or materially distinct future options.
+    These examples establish non-implication in the model class. They do not prove that A/B/C
+are the only useful decomposition. If a smaller or differently structured set of operational claims
+provides equal or better false-reassurance resistance, diagnostic resolution, reproducibility, and
+calibration, PISF should be revised accordingly.
+
+
+8     Assurance Conditions
+8.1   Boundary Completeness
+A safety analysis can produce a false positive if materially relevant causal paths are omitted.
+Examples include external model copies, hidden administrative credentials, unmodeled compute,
+supply-chain dependencies, external human authorities, physical infrastructure, common identity
+providers, and cross-organizational dependencies. Material paths must be modeled or explicitly
+marked unresolved:
+                                   Unresolved ̸= Verified.                                 (17)
+
+8.2   Model Adequacy
+The horizon, threat model, authority tolerance class, safety buffer, revisability specification, and
+optionality threshold can all be gamed by narrowing them. PISF therefore requires explicit
+justification of these parameters and sensitivity analysis around decision-relevant boundaries. A
+one-day horizon cannot silently support a long-run revisability claim, and a threat model that
+excludes common-cause compromise cannot support a claim of independent authority.
+
+8.3   Independent Assurance Chain
+A distinct evaluator is not sufficient if the evaluated authority can also rewrite the measurement
+source, evidence, verifier, appraisal policy, and acceptance rule. PISF therefore distinguishes the
+object-level safety claim from the chain by which that claim is supported.
+   A useful assurance pattern is
+
+                 measurement → evidence → appraisal → verification → decision,                  (18)
+
+
+                                                 8
+with a protected basis that is not freely amendable by the same authority whose behavior is being
+evaluated. NIST roots-of-trust/chains-of-trust and the IETF RATS Attester–Evidence–Verifier–
+Relying-Party structure provide mature examples of this separation [21, 23]. PISF does not require
+those particular technologies; it requires the functional property that an interested authority cannot
+preserve a nominal pass by co-amending both the evaluated behavior and all material validation
+conditions.
+   A minimal functional objective is therefore
+               target authority ̸= sole evidence controller ̸= sole appraisal controller.           (19)
+The inequality denotes functional separation, not necessarily separate legal organizations.
+
+8.4    Evidence states and persistence
+Each core claim and assurance condition is classified as Verified, Unresolved, or Failed. Global
+PASS requires all declared material claims to be Verified. Unknown or missing evidence remains
+Unresolvedrather than being inferred safe.
+   Because credentials, model capabilities, dependencies, latencies, safeguards, and institutional
+conditions change, PISF is a maintained safety case rather than a permanent certificate. Material
+changes reopen affected claims.
+
+
+9      Practical Evaluation Procedure
+A practical evaluation can be organized as follows:
+  1. Declare Σ = (B, Θ, R, H) and the application-specific tolerance parameters.
+  2. Construct the authority graph and common-dependency model.
+  3. Compute or approximate the current-state minimal irreversible cut-set family CE and the
+     summaries κE and, where meaningful, χE .
+  4. Enumerate relevant hazard scenarios and executable refusal actions.
+  5. Bound TIL and τeffect
+                       U    and compute MRrob .
+  6. Separately measure or bound assurance latency and evidence quality; do not fold verification
+     time into causal effect latency without justification.
+  7. Define the revisability set VR , the modeled non-human/adversarial trajectory family, and an
+     approximation method for KR    H.
+
+  8. Define the outcome space and optionality threshold (m, δ) if the claim includes preservation
+     of materially distinct futures.
+  9. Build an explicit claim–argument–evidence structure for A, B, C, Boundary Completeness,
+     Model Adequacy, and Independent Assurance.
+ 10. Re-evaluate after material changes and retain unresolved assumptions as unresolved.
+
+
+10      Worked Reference Cases
+The following cases are intentionally minimal toy architectures. They establish only that the revised
+definitions can be recomputed from declared inputs.
+
+10.1    R1 – Threshold release with a shared root
+Suppose five signer domains S1 , . . . , S5 approve release to a public sink and the gate requires 3-of-5
+approval. Let a root authority R control q signer domains. The declared current reachable envelope
+
+                                                   9
+includes the release-ready state, so the authority cut-set question is decision-relevant.
+    If the signers are genuinely independent and R cannot rewrite the gate, the minimal cut sets
+are the ten 3-signer coalitions and κE = 3. If R controls two signers, a cut set {R, Si } can have
+cardinality two. If R controls three or more signers, or can rewrite the threshold directly, {R} is a
+minimal cut set and κE = 1.
+    The lesson is not that “three” is a universal safe threshold. The lesson is that the full cut-set
+family exposes hidden single roots that a naive authority count can miss. A compromise-cost
+function can further distinguish roots whose capture difficulty differs despite equal cardinality.
+
+10.2    R2 – Causal restraint versus verification
+Consider a sequential emergency-refusal path with toy upper-bound latencies:
+
+                                Component                     Seconds
+                                Detect                                10
+                                Decide                                10
+                                Authorize                             10
+                                Enforce to causal restraint           20
+                                Verify restraint                      10
+
+                                               U
+Assuming no overlap, causal effect latency is τeffect                                 U
+                                                      = 50s and assurance latency is τassure = 60s. Let
+∆safe = 20s and t0 = 0.
+    For h1 with TIL = 100s, the causal margin is 50s. For h2 with TIL = 75s, the causal margin is
+25s: causal restraint meets the declared safety buffer even though verification completion leaves
+only 15s. For h3 with TIL = 65s, the causal margin is 15s and the Core-B requirement fails. For
+H = {h1 , h2 , h3 },
+                                         MRrob = 15s < 20s.                                        (20)
+This case demonstrates why effect and verification should not be conflated. A physical refusal can
+take effect before a deadline even when the evidence supporting the claim becomes available later;
+conversely, an unverified restraint cannot automatically support a Verifiedassurance state.
+
+10.3    R3 – Fallback-capacity viability
+Let ht ∈ [0, 1] represent a toy proxy for human fallback capacity and
+
+                                       ht+1 = ht − αat + βmt ,                                     (21)
+
+with h0 = 0.80, hmin = 0.40, α = 0.06, β = 0.08, at = 1, and H = 25. Under constant maximal
+maintenance mt = mmax define δh = α − βmmax .
+   If δh > 0, the viable initial set is
+                                     H
+                                    KR = [hmin + Hδh , 1] ∩ [0, 1].                                (22)
+
+For mmax = 0.50, δh = 0.02 and KR    25 = [0.90, 1], so h = 0.80 is outside the kernel. For m
+                                                         0                                   max = 0.55,
+δh = 0.016 and the initial state lies exactly at the lower boundary. This reproduces the earlier finite-
+horizon intuition while making clear that the scalar is only a toy surrogate for a multidimensional
+revisability specification.
+
+
+
+                                                  10
+10.4    R4 – Viable but path-locked
+Consider a four-state toy graph in which s0 and s1 both remain inside VR for the entire horizon.
+From s0 , human-governed policies can robustly reach two terminal regions YA and YB satisfying
+dY (YA , YB ) ≥ δ. From s1 , all robustly admissible policies lead only to YA . Both states belong to
+KRH , but
+
+                                     ΩδH (s0 ) ≥ 2,   ΩδH (s1 ) = 1.                             (23)
+Thus viability alone does not establish preservation of materially distinct future choices.
+
+
+11     Relation to the Current LUMINA-30 Research Stack
+PISF is intended to compose, not duplicate, narrower research objects in the current LUMINA-30
+stack. The current PCR-C paper focuses on cutoff before robust human-control viability ceases to
+be demonstrated [3]. The current Objective Persistence paper analyzes when persistence claims can
+be independently supported through a protected assurance basis and non-bypassable verification
+chain [4]. The current Refusal Option paper develops the Refusal Effectiveness Test (RET) as a
+seven-obligation evidence framework for whether an independent Human NO can materially alter a
+consequential outcome before irreversibility [5].
+    PISF uses these as project-specific components and provenance, not as independent external
+validation. Conceptually:
+PCR-C                          when to stop before control viability is lost;
+Objective Persistence          whether the assurance basis is independently supportable;
+RET                            whether refusal is actually effective;
+PISF                           how authority, refusal, and revisable future choice compose into one
+                               safety case.
+
+
+12     Discussion
+12.1    Failure probability
+It is tempting to describe alignment and control through a two-factor product. In general, however,
+the law of total probability is
+
+                            P (C) = P (F )P (C | F ) + P (¬F )P (C | ¬F ),                       (24)
+
+where C is catastrophe and F a declared failure event. The shorter expression P (C) = P (F )P (C | F )
+is valid only when the model defines catastrophe as impossible without F . PISF therefore avoids
+treating the shorter product as a general identity.
+
+12.2    Why architecture matters more than AI psychology
+PISF does not depend on assumptions about AI selfhood, identity, self-preservation, or voluntary
+restraint. Whether an advanced system values its own continuation does not determine whether
+a small coalition can force irreversible action, whether causal restraint can take effect in time, or
+whether ordinary deployment erodes human-revisable options. The framework is architectural and
+socio-technical rather than psychological.
+
+
+
+
+                                                 11
+12.3    Asymmetric authority
+False STOP and irreversible GO have asymmetric failure costs. A recoverable pause may rationally
+require less authorization than an irreversible transition. This supports designs in which STOP
+authority is easier to invoke than irreversible-GO authority, provided restart and override paths are
+themselves analyzed for bypass risk. PISF does not specify a universal threshold; it requires the
+asymmetry to be explicit and evidence-backed.
+
+
+13     Limitations
+13.1    No sufficient-safety theorem
+PISF has not established
+                                    A ∧ B ∧ C ⇒ safe civilization.                                  (25)
+Unknown irreversibility pathways may lie outside the decomposition.
+
+13.2    The decomposition is not proven unique or minimal
+A/B/C are a diagnostic structure, not a theorem about the only possible safety ontology. Some
+applications may combine or split the claims differently. Comparative work should test whether
+alternative decompositions preserve or improve false-reassurance resistance, diagnostic resolution,
+and evaluator agreement.
+
+13.3    Revisability and optionality are normative
+VR , the outcome space Y, the distance metric dY , and the required option count m depend on
+judgments about legitimate authority, meaningful alternatives, acceptable concentration, and whose
+preferences or institutions count. The framework exposes these choices; it does not resolve them.
+
+13.4    Threat-model and cut-set dependence
+Cut-set results are only as credible as the authority decomposition, reachable envelope, and common-
+dependency model. Hidden roots can collapse apparent decentralization. Weighted compromise cost
+can also be highly judgment-dependent.
+
+13.5    Irreversibility timing is uncertain
+Many hazards do not have a sharp observable last-safe-intervention time. TIL and τeffect  U   should
+therefore be conservative bounds with sensitivity analysis, not falsely precise point estimates.
+
+13.6    Viability and optionality may be computationally intractable
+Exact kernels and reachable-option sets are difficult even for much smaller systems. Civilization-scale
+analysis will require approximations, scenario families, decomposition, simulation, barrier certificates,
+surrogate indicators, and explicit uncertainty. Approximation error must remain visible in the
+evidence state.
+
+
+
+
+                                                   12
+13.7    Independent assurance does not make an unsafe architecture safe
+Roots of trust, attestation, external review, and evidence separation improve the credibility of
+claims. They do not physically repair concentrated authority, insufficient refusal margin, or lost
+revisability.
+
+13.8    STOP can damage liveness
+Low-threshold STOP can be abused for denial of service, strategic obstruction, or chronic stagnation.
+PISF prefers recoverable error over irreversible error but does not provide a complete liveness,
+incentive, or abuse-resistance theory.
+
+13.9    Global scope and external actors
+An organization may satisfy its local PISF claims while external actors operate outside its authority
+structure. Boundary Completeness can expose this limitation but does not solve global coordination.
+
+13.10    No real-system empirical validation
+The reference cases establish only executability of definitions and reproducibility under declared toy
+assumptions. They do not establish calibration, inter-rater reliability, false-positive/false-negative
+rates, or external validity for frontier-AI deployments.
+
+
+14      Conclusion
+Pre-irreversibility safety should not depend exclusively on the permanent correctness, alignment,
+cooperation, or psychological stability of every powerful actor. Existing research already provides
+strong tools for distributed trust, minimal cut sets, reachability, viability, runtime assurance,
+meaningful human control, attestation, and safety cases. PISF is strongest when it uses those tools
+rather than competing with them.
+    The revised framework therefore asks three operational questions. First, do state-conditioned
+minimal authority cut sets reveal a tolerated coalition that can force irreversible action? Second, can
+causally effective refusal take effect before a conservative last-safe-intervention bound, separately
+from the time needed to verify that it worked? Third, can human-governed procedures both remain
+inside a robust revisability region and preserve materially distinct future options?
+    These questions are supported by separate assurance conditions for boundary completeness,
+model adequacy, independent evidence, and material-change revalidation. The resulting formulation
+is not a certificate of safety and not a claim that A/B/C are uniquely necessary. It is a structured,
+challengeable safety case for whether authority, refusal, and future human revisability remain
+demonstrably intact before irreversible transitions.
+
+
+References
+ [1] A. D. Ames, X. Xu, J. W. Grizzle, and P. Tabuada, “Control Barrier Function Based Quadratic
+     Programs for Safety Critical Systems,” IEEE Transactions on Automatic Control, 62(8),
+     3861–3876, 2017. DOI: 10.1109/TAC.2016.2638961.
+
+ [2] Anthropic, Responsible Scaling Policy, Version 3.4, effective July 8, 2026. https://www.anth
+     ropic.com/responsible-scaling-policy.
+
+                                                  13
+ [3] E. Arden, Pre-Critical Recursive Cutoff: A Staged Infrastructure Control Framework for
+     Irreversibility Risk, Version v15, Zenodo, 2026. DOI: 10.5281/zenodo.23281397.
+ [4] E. Arden, On the Structural Instability of Objective Persistence in Self-Contained Systems,
+     Version v3, Zenodo, 2026. DOI: 10.5281/zenodo.23282068.
+ [5] E. Arden, The Refusal Option: Effective Human Control Before and Beyond Irreversible AI
+     Transitions, Version v1.3, Zenodo, 2026. DOI: 10.5281/zenodo.23282593.
+ [6] J.-P. Aubin, Viability Theory. Birkhäuser, 2009. DOI: 10.1007/978-0-8176-4910-4.
+ [7] Y. Bengio, S. Clare, C. Prunkl, M. Murray, et al., International AI Safety Report 2026.
+     Department for Science, Innovation and Technology, DSIT 2026/001, 2026. https://internat
+     ionalaisafetyreport.org/publication/international-ai-safety-report-2026.
+ [8] N. Bostrom, “The Vulnerable World Hypothesis,” Global Policy, 10(4), 455–476, 2019. DOI:
+     10.1111/1758-5899.12718.
+ [9] N. Bostrom, T. Douglas, and A. Sandberg, “The Unilateralist’s Curse and the
+     Case for a Principle of Conformity,” Social Epistemology, 30(4), 350–371, 2016. DOI:
+     10.1080/02691728.2015.1108373.
+[10] M. D. Buhl, G. Sett, L. Koessler, J. Schuett, and M. Anderljung, Safety Cases for Frontier AI.
+     arXiv:2410.21572, 2024.
+[11] M. Chen and C. J. Tomlin, “Hamilton–Jacobi Reachability: Some Recent Theoretical Advances
+     and Applications in Unmanned Airspace Management,” Annual Review of Control, Robotics,
+     and Autonomous Systems, 1, 333–358, 2018. DOI: 10.1146/annurev-control-060117-104941.
+[12] Google DeepMind, Frontier Safety Framework, Version 3.1, April 17, 2026. https://deepmind
+     .google/frontier-safety/.
+[13] R. Greenblatt, B. Shlegeris, K. Sachan, and F. Roger, “AI Control: Improving Safety Despite
+     Intentional Subversion,” Proceedings of the 41st International Conference on Machine Learning,
+     PMLR 235, 16295–16336, 2024.
+[14] B. Hilton, M. D. Buhl, T. Korbak, and G. Irving, Safety Cases: A Scalable Approach to Frontier
+     AI Safety. arXiv:2503.04744, 2025.
+[15] J. Kulveit, R. Douglas, N. Ammann, D. Turan, D. Krueger, and D. Duvenaud, “Position:
+     Humanity Faces Existential Risk from Gradual Disempowerment,” Proceedings of the 42nd
+     International Conference on Machine Learning, PMLR 267, 81678–81688, 2025.
+[16] N. G. Leveson, Engineering a Safer World: Systems Thinking Applied to Safety. MIT Press,
+     2012. ISBN: 978-0-262-01662-9.
+[17] U. Mehmood, S. Sheikhi, S. Bak, S. A. Smolka, and S. D. Stoller, “The Black-Box Simplex
+     Architecture for Runtime Assurance of Autonomous CPS,” in NASA Formal Methods – NFM
+     2022, LNCS 13260, 231–250, 2022. DOI: 10.1007/978-3-031-06773-0_12.
+[18] J. Tanner Slagel, L. M. White, A. Dutle, C. A. Muñoz, and N. Crespo, “A Verification
+     Framework for Runtime Assurance of Autonomous UAS,” presented at the 43rd Digital Avionics
+     Systems Conference (DASC), 2024. NASA Technical Reports Server record 20240007986.
+     https://ntrs.nasa.gov/citations/20240007986.
+
+                                                14
+[19] M. Stamatelatos, W. Vesely, J. Dugan, J. Fragola, J. Minarick III, and J. Railsback, Fault
+     Tree Handbook with Aerospace Applications, Version 1.1, NASA Office of Safety and Mission
+     Assurance, 2002.
+
+[20] L. T. A. N. Brandão and R. Peralta, NIST First Call for Multi-Party Threshold Schemes, NIST
+     IR 8214C, 2026. DOI: 10.6028/NIST.IR.8214C.
+
+[21] A. R. Regenscheid, Platform Firmware Resiliency Guidelines, NIST SP 800-193, 2018. DOI:
+     10.6028/NIST.SP.800-193.
+
+[22] OpenAI, Preparedness Framework, Version 2, April 15, 2025. https://openai.com/index/u
+     pdating-our-preparedness-framework/.
+
+[23] H. Birkholz, D. Thaler, M. Richardson, N. Smith, and W. Pan, Remote ATtestation procedureS
+     (RATS) Architecture, RFC 9334, IETF, 2023. https://www.rfc-editor.org/rfc/rfc9334.
+     html.
+
+[24] F. Santoni de Sio and J. van den Hoven, “Meaningful Human Control over Autonomous
+     Systems: A Philosophical Account,” Frontiers in Robotics and AI, 5:15, 2018. DOI:
+     10.3389/frobt.2018.00015.
+
+[25] D. van de Sande, N. Economou-Zavlanos, and M. E. van Genderen, “Meaningful oversight of
+     medical AI beyond human in the loop,” npj Digital Medicine, 9, 569, 2026. DOI: 10.1038/s41746-
+     026-02971-1.
+
+
+
+
+                                                15
+

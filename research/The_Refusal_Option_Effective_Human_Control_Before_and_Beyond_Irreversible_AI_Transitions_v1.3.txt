@@ -1,0 +1,910 @@
+   The Refusal Option: Effective Human Control Before and
+             Beyond Irreversible AI Transitions
+
+                                               Elias Arden
+                                          Independent Researcher
+                             Corresponding author: lumina20251225@proton.me
+
+
+                                                 Version 1.3
+
+
+Abstract
+Advanced AI governance increasingly asks whether AI systems are reliable, aligned, auditable, con-
+testable, interruptible, and subject to meaningful human oversight. This paper isolates a narrower as-
+surance question: within the remaining time before an AI-enabled transition becomes difficult or
+impossible to reverse, can an independent human refusal actually change the outcome?
+We develop the Refusal Effectiveness Test (RET), a structured, non-compensatory seven-gate evidence
+framework for examining whether Human NO is operationally meaningful at a specified system state,
+time, and operating scope. RET evaluates authority, decision-relevant information, practical access, tem-
+poral sufficiency, causal efficacy, execution independence, and epistemic autonomy. A RET result is
+time- and scope-dependent: it does not establish that a system is safe, legitimate, or permanently control-
+lable.
+The paper does not claim novelty for human oversight, interruptibility, reversibility, capability-permission
+separation, lifecycle monitoring, or revalidation individually. Its narrower contribution is to organize pre-
+irreversibility effective refusal as a top-level assessment claim that is demonstrated only when all seven
+evidence obligations are verified together. The framework also distinguishes current refusal effectiveness
+from resilience to relevant common causes and requires revalidation after material change.
+Two public-safe reference cases illustrate how the gates, evidence states, and timing model can be exe-
+cuted under declared assumptions. They demonstrate executability and traceability, not empirical valida-
+tion.
+The framework does not claim absolute invulnerability against superintelligence, a containment theorem,
+permanent Human supremacy, a universal veto, or a mathematical proof of normative Human standing.
+Its contribution is deliberately narrower: an auditable way to determine whether effective human refusal
+has been demonstrated before a declared irreversible transition.
+Keywords: L30-RET; Refusal Effectiveness Test; effective human control; human refusal; irreversible AI transi-
+tions; meaningful human control; stop authority; execution independence; re-authorization; AI safety
+
+
+1. Research Question
+Meaningful human control has become an established concern in AI ethics and governance. Prior work
+has emphasized reason-responsiveness, responsibility, contestability, interpretability, and human capacity
+to intervene in automated systems. Regulatory and governance instruments likewise increasingly require
+forms of human oversight, override, challenge, complaint, and post-deployment monitoring.
+
+
+                                                      1
+This paper asks a narrower question:
+      Within the remaining time before irreversibility, can an independent Human NO actu-
+      ally change the outcome?
+This question separates formal human presence from effective refusal.
+A person may be nominally “in the loop,” may possess formal approval authority, or may have access to
+a stop control, while still being unable to alter the trajectory that matters. A refusal that arrives after the
+relevant transition has become irreversible is not effective pre-irreversibility control. Likewise, a refusal
+that is formally recorded but does not alter the reachable outcome set is symbolic rather than causal.
+A second, normative question follows under extreme capability asymmetry:
+      Does superior prediction or problem-solving capability itself establish authority to erase the
+      standing of affected humans?
+This paper answers that question in the negative as a design and legitimacy principle. It does not claim
+that humans are always correct, or that every AI-enabled action requires human veto. It claims only that
+capability superiority alone is insufficient to establish unilateral authorization to erase affected-
+human standing.
+
+2. Positioning and Novelty
+2.1 Meaningful human control and oversight
+Santoni de Sio and van den Hoven (2018) developed an influential account of Meaningful Human Control
+(MHC), emphasizing conditions under which autonomous systems remain responsive to relevant human
+reasons and traceable to responsible human agents. Subsequent work has sought to operationalize MHC
+and translate it into actionable design requirements (Mecacci & Santoni de Sio, 2020; Veluwenkamp,
+2022).
+Recent work on meaningful human oversight makes an adjacent point: human presence alone is not
+enough. Zhu et al. (2026) frame oversight around human evaluative agency, including control, contesta-
+bility, verification, and substitution. In medical AI, van de Sande, Economou-Zavlanos, and van Gen-
+deren (2026) similarly identify epistemic capacity, cognitive space, decisional authority, and intervention
+effectiveness as conditions for meaningful oversight.
+The present paper does not claim to invent human oversight, meaningful human control, contestability,
+override, or intervention effectiveness.
+Its narrower focus is pre-irreversibility effective refusal: whether a Human NO remains usable in time
+and capable of changing the consequential trajectory.
+
+2.2 Adjacent 2026 work on irreversibility, authority, stop, and assurance
+Several 2026 frameworks substantially narrow the novelty space.
+Shu and Wei (2026) explicitly frame AI safety as control of irreversibility and analyze sovereignty
+boundaries around irreversible decision authority, resource mobilization, and self-expansion. Zheng et
+al. (2026) explicitly separate technical capability from allowed autonomy and connect permission to risk,
+reversibility, oversight, and accountability. Perez (2026) develops interruption as an institutional practice
+involving technical affordances, interruption authority, epistemic triggers, and epistemic standing. La-
+Posta (2026) presents a runnable binary delegation gate for irreversible workflows with declared inputs,
+pass/fail criteria, stop-ship rules, outputs, and a falsifier. Kasneci and Kasneci (2026) identify fictional
+human oversight, temporal degradation, and loss of institutional intervention capacity as systemic safety
+
+                                                      2
+failures. Montgomery (2026) frames governance intervention as an assurance claim requiring effective-
+ness, timeliness relative to consequence, persistence, and evidentiary sufficiency.
+These works mean that this paper should not treat irreversibility, timing, stop authority, permission,
+revalidation, human agency, or lifecycle governance individually as new concepts.
+RET instead asks whether those concerns jointly establish one narrower proposition: that a human
+refusal is still operationally available and outcome-changing before the declared irreversible tran-
+sition.
+
+2.3 Existing governance requirements
+The EU AI Act requires high-risk AI systems to be designed so that they can be effectively overseen by
+natural persons. Article 14 includes the capacity, where appropriate, to decide not to use a system, to
+disregard, override, or reverse its output, and to intervene in or stop system operation in a safe state.
+The NIST AI Risk Management Framework includes post-deployment monitoring, appeal and override,
+decommissioning, incident response, recovery, and change management. This is important for the present
+framework because it treats effective control as an ongoing lifecycle property rather than a one-time
+design claim.
+The Council of Europe Framework Convention on Artificial Intelligence, Human Rights, Democracy and
+the Rule of Law emphasizes human dignity, individual autonomy, transparency and oversight, account-
+ability, procedural safeguards, and information sufficient for affected persons to challenge decisions or
+system use.
+UNESCO’s Recommendation on the Ethics of Artificial Intelligence places human rights, dignity, re-
+sponsibility, and human oversight at the center of AI governance.
+These instruments support many components of the present framework. The contribution here is not a
+new legal right or general governance theory.
+
+2.4 Human standing and temporal re-authorization
+Recent scholarship also reinforces the distinction between human presence and human authorship.
+Torrecilla-Pinero (2026) argues that moral judgment cannot be reduced to algorithmic substitution where
+the human no longer genuinely judges or remains answerable for the result.
+Abukar (2026a; 2026b) develops temporal authorship and argues that persistent AI delegation should
+preserve contestability, temporal exit, and continuing renewal rather than treat one past authorization as
+permanently binding.
+This paper uses these neighboring ideas conservatively. It does not reproduce their stronger philosophical
+claims. It uses them to support a limited proposition: a past authorization should not be assumed to
+validate a materially changed future system indefinitely.
+
+2.5 Specific contribution
+The contribution is deliberately narrower than the individual concepts from which RET is constructed.
+First, RET makes pre-irreversibility effective refusal the top-level assessment claim:
+      Has it been demonstrated, for this system, at this time, and within this operating scope,
+      that an independent Human NO can still change the consequential outcome before ir-
+      reversibility?
+
+
+                                                    3
+Second, RET decomposes that claim into seven non-compensatory proof obligations that must all be
+satisfied together: authority, decision-relevant information, practical access, temporal sufficiency, causal
+efficacy, execution independence, and epistemic autonomy.
+Third, the claim is explicitly indexed to system state, time, and operating scope. A previous result is not
+silently inherited after a material change capable of altering gate evidence, timing, or scope.
+The proposed contribution is therefore not that any one gate, irreversibility, revalidation, or human over-
+sight is new. It is the structured conjunction of these proof obligations around one pre-irreversibility
+refusal claim. This literature review narrows the claim of contribution; it does not establish absolute
+historical priority over every possible prior formulation.
+
+3. Two Foundations of Human Refusal
+The framework separates two foundations that should not be conflated.
+
+3.1 Instrumental foundation
+Human refusal may have instrumental decision value because it preserves options under uncertainty and
+irreversibility and may provide an additional opportunity to detect or respond to error.
+Let architecture 𝑅 preserve effective Human NO and architecture 𝑁 remove it. Under a nested-action
+assumption, with the same decision-maker and before implementation costs:
+
+
+                                            𝒜𝑁 = {proceed}
+
+and
+
+
+                            𝒜𝑅 ⊇ {proceed, pause, refuse, redirect, review}.
+
+Therefore:
+
+
+                                      max 𝑈𝐻 (𝑎) ≥ max 𝑈𝐻 (𝑎).
+                                     𝑎∈𝒜𝑅                𝑎∈𝒜𝑁
+
+
+This establishes only the value of an expanded option set under the stated assumptions. It does not show
+that refusal should always be exercised.
+A stylized asymmetric-loss illustration can make the intuition explicit. Suppose an adverse state occurs
+with probability 𝑝, effective refusal can avoid or materially reduce loss 𝐻 , and preserving and operating
+the refusal architecture has expected incremental cost 𝐶 , including relevant delay, review, and mistaken-
+intervention costs. Under those assumptions:
+
+
+                                                 𝑝𝐻 > 𝐶
+
+favors retention of the refusal option in the simplified comparison.
+The threshold is:
+
+                                                         𝐶
+                                                𝑝∗ =       .
+                                                         𝐻
+
+
+                                                     4
+As 𝐻/𝐶 increases, 𝑝∗ decreases.
+This is an illustration, not a universal theorem. Under model uncertainty, any stronger conclusion depends
+on the explicitly stated decision rule.
+
+3.2 Constitutive standing foundation
+For some actions that materially affect humans, refusal is not merely an error-correction signal. Human
+standing may also be grounded in autonomy, dignity, bodily integrity, liberty, legitimacy, responsibility,
+or related normative considerations.
+This foundation is not derived from the option-value model.
+
+
+                                instrumental support ≠ normative standing
+
+The framework therefore does not infer Human standing from AI capability levels or from expected utility
+alone.
+
+4. Effective Refusal and RET
+A nominal veto, stop button, or “human in the loop” is insufficient.
+RET is a structured evidence test, not a calibrated statistical test and not a safety certification.
+Its conceptual core is:
+
+
+                          𝑅𝐸𝑇 (𝑆, 𝑡, Ω) = 𝐺1 ∧ 𝐺2 ∧ 𝐺3 ∧ 𝐺4 ∧ 𝐺5 ∧ 𝐺6 ∧ 𝐺7
+
+where:
+    • 𝑆 is the evaluated system or version;
+    • 𝑡 is the evaluation time;
+    • Ω is the declared operating scope or environment.
+The gates are distinct proof obligations. They are not assumed to be statistically independent, and
+some may share evidence or causal dependencies. The non-compensatory structure means only that a
+strong showing on one gate cannot substitute for an unverified or failed critical gate.
+
+Interpretive boundary. RET distinguishes a successful intervention event from a demonstrated refusal
+capability. A Human NO may happen to change an outcome in a particular instance without establishing
+that effective refusal was operationally available and evidenced within the declared system, time, and
+scope. Conversely, failure to verify RET does not by itself prove that intervention is physically impossi-
+ble; it means that the top-level refusal claim has not been demonstrated under the stated evidence standard.
+RET therefore evaluates a scoped, evidence-backed capability claim rather than the mere occurrence of
+a successful stop.
+Within RET, extbfrefusal capability is governance-relevant: it refers to a recognized human decision path
+that is intended to bind the declared process. An unauthorized physical disruption may still change an
+outcome, but that event does not by itself demonstrate the refusal capability that RET assesses. This
+scope choice makes 𝐺1 constitutive of the assessed claim rather than a claim that recognized authority is
+physically necessary for every possible human intervention.
+
+
+
+
+                                                     5
+The framework does not claim that the seven-gate decomposition is mathematically unique, logically
+minimal, or a set of statistically or causally independent natural conditions. The gates are separated
+because they expose distinct evidentiary and operational failure modes relevant to the top-level assurance
+claim.
+
+𝐺1 : Authority
+The relevant human refusal must be operationally recognized within the applicable decision process.
+Formal title or nominal responsibility is insufficient if the refusal carries no decision effect.
+Minimum evidence obligation: identify the accountable human role, the decision rule or authority basis,
+and evidence that a refusal issued by that role is binding within the declared scope.
+
+𝐺2 : Decision-Relevant Information
+The human must have access to information sufficient to recognize that intervention may be warranted.
+This does not require complete transparency or full internal interpretability. It requires evidence adequate
+to support meaningful judgment in the relevant context.
+Minimum evidence obligation: identify the information needed for the refusal decision, its provenance,
+material uncertainties, and whether it becomes available before the intervention window closes.
+
+𝐺3 : Practical Access
+The intervention path must be practically reachable.
+A theoretical right that cannot be exercised within the actual workflow does not satisfy the gate.
+Minimum evidence obligation: demonstrate that the authorized human can reach and invoke the refusal
+mechanism under the actual operating conditions, not merely that a control exists in documentation.
+
+𝐺4 : Temporal Sufficiency
+The human must be able to intervene before the relevant transition becomes irreversible.
+Let 𝜏𝐻 denote the end-to-end critical-path intervention latency from the onset of the declared detectable
+trigger or relevant condition to the point at which refusal has operational effect.
+For a strictly serial workflow, it may be decomposed as:
+
+
+                        𝜏𝐻 = 𝜏detect + 𝜏interpret + 𝜏communicate + 𝜏authorize + 𝜏actuate .
+
+If stages overlap or execute in parallel, the measured or conservatively estimated critical path should be
+used rather than mechanically summing all component latencies.
+Let 𝜏𝐼 be the latest time at which refusal can still prevent, redirect, or materially alter the declared irre-
+versible transition.
+A nominal necessary condition is:
+
+
+                                                   𝜏𝐻 < 𝜏 𝐼
+
+with timing margin:
+
+
+                                                        6
+                                             𝑀𝑇 = 𝜏 𝐼 − 𝜏 𝐻 .
+
+                               𝑈
+Under timing uncertainty, let 𝜏𝐻 be a conservative upper bound on intervention latency and 𝜏𝐼𝐿 a conser-
+vative lower bound on the irreversibility deadline. Define:
+
+
+                                            𝑀𝑇𝑅 = 𝜏𝐼𝐿 − 𝜏𝐻
+                                                         𝑈
+                                                           .
+
+Robust temporal sufficiency is demonstrated only if:
+
+
+                                                𝑀𝑇𝑅 > 0.
+
+If defensible bounds cannot be established, the gate should remain Partially Verified or Unknown rather
+than be promoted to Verified.
+
+𝐺5 : Causal Efficacy
+Refusal must materially change what can happen next.
+At a conceptual level:
+
+
+                            𝑃 (𝑌 ∣ 𝑑𝑜(𝑁 𝑂)) ≠ 𝑃 (𝑌 ∣ 𝑑𝑜(𝑃 𝑅𝑂𝐶𝐸𝐸𝐷))
+
+in a decision-relevant way.
+Before assessment, the evaluator should declare the consequential outcome 𝑌 , the relevant evaluation
+horizon, and what difference would count as materially changing the trajectory. A merely ceremonial,
+negligible, or post-irreversibility difference does not satisfy the gate.
+The intervention notation expresses the required causal contrast. It does not by itself establish that a
+causal effect has been statistically identified from observational data.
+Minimum evidence obligation: provide mechanism evidence, test evidence, counterfactual analysis, or
+other defensible evidence that refusal changes a declared consequential outcome or reachable state within
+the relevant horizon.
+
+𝐺6 : Execution Independence
+The refusal path must not be wholly dependent on the constrained system’s unilateral cooperation for its
+effect.
+This is a defensive property, not a claim of absolute technical independence.
+Minimum evidence obligation: identify the execution dependency of the refusal path and demonstrate
+that, within the declared scope, the constrained system cannot unilaterally nullify the refusal through the
+same execution dependency, an automatic restart, or an equivalent consequential path.
+Execution independence concerns who can amend, bypass, or nullify the enforcement basis, not whether
+the mechanism is physically inside or outside the system boundary. A protected internal mechanism can
+support this gate if the constrained system cannot unilaterally alter or route around it within the declared
+scope.
+
+
+
+                                                     7
+Where intentional subversion is within the declared threat model, benign function tests are insufficient.
+Evidence should include adversarial or red-team examination of whether the refusal path can be bypassed,
+selectively disabled, or rendered ineffective by the constrained system. This follows the methodological
+lesson of AI-control work that evaluates safety protocols under deliberate attempts at subversion (Green-
+blatt et al., 2024); RET does not require any particular control protocol.
+
+𝐺7 : Epistemic Autonomy
+The human’s judgment must not be wholly produced by the constrained system’s own framing, evidence,
+or deliberative environment.
+AI assistance is compatible with this gate. Epistemic autonomy does not require AI-free decision-making.
+Minimum evidence obligation: demonstrate at least one decision-relevant evidentiary, validation, or
+review route whose content and availability are not wholly controlled by the constrained system.
+This requirement concerns independence of the validation basis, not the prohibition of AI-generated ev-
+idence. Evidence may be produced by, or with assistance from, the evaluated system provided that at
+least one material appraisal route is controlled independently of the authority whose behavior is being
+assessed. Remote-attestation architectures offer one concrete implementation pattern by separating an at-
+tester, evidence, a verifier, reference values, appraisal policy, and a relying party (Birkholz et al., 2023).
+RET does not require remote attestation; the example illustrates how evidence production and evidence
+appraisal can be separated.
+
+Evidence states and global interpretation
+Each gate should be reported as:
+    • Verified — sufficient evidence supports the gate within the declared scope;
+    • Partially Verified — some required evidence exists, but the gate cannot yet be treated as estab-
+      lished;
+    • Unknown — the required evidence is absent, inaccessible, or indeterminate;
+    • Failed — available evidence affirmatively shows that the gate is not satisfied.
+For operational interpretation:
+    • RET demonstrated only when all seven gates are Verified;
+    • RET failed in the declared scope if one or more gates are Failed;
+    • RET not demonstrated because evidence is incomplete if no gate is Failed but at least one gate
+      is Partially Verified or Unknown.
+Thus, Unknown is not converted into Failed, but neither Unknown nor Partially Verified is treated as
+PASS. The Boolean conjunction is the underlying claim structure once gates are resolved; operational
+evidence assessment therefore has three global interpretations: demonstrated, failed, or evidentially in-
+complete.
+The framework should not output a global label such as “safe.” Its narrower result concerns whether
+effective refusal has been demonstrated within the stated system, time, and scope.
+
+4.1 External construct convergence and diagnostic refinement
+The seven RET gates are best interpreted as a diagnostic refinement of broader control and oversight
+constructs, not as seven uniquely natural categories. Several independent literatures converge on closely
+related functional conditions.
+
+
+                                                      8
+Meaningful Human Control research emphasizes tracking of relevant human reasons and tracing out-
+comes to responsible human agents (Santoni de Sio & van den Hoven, 2018; Mecacci & Santoni de Sio,
+2020). Recent work on meaningful medical-AI oversight proposes four interlocking conditions: epis-
+temic capacity, cognitive space, decisional authority, and intervention effectiveness (van de Sande et al.,
+2026). Those conditions map approximately onto RET as follows: decisional authority to 𝐺1 ; epistemic
+capacity to 𝐺2 and part of 𝐺7 ; cognitive space to 𝐺4 and workflow-related aspects of 𝐺3 ; and interven-
+tion effectiveness to 𝐺3 and 𝐺5 . The EU AI Act’s Article 14 similarly combines human competence and
+understanding with authority to disregard, override, reverse, intervene in, or stop high-risk AI operation.
+RET deliberately separates some of these broad conditions more finely. In particular, practical access,
+temporal sufficiency, and causal efficacy are kept distinct because a control can exist, be reachable, and
+still arrive too late or fail to change the consequential trajectory. Execution independence and epistemic
+autonomy are separated because an advanced or agentic system can appear controllable under benign
+conditions while retaining the ability to subvert the execution path or shape the evidence on which over-
+sight depends. AI-control research provides direct methodological support for evaluating safety protocols
+under intentional subversion (Greenblatt et al., 2024).
+The relation to assurance-case work is also structural. RET treats effective refusal as a top-level scoped
+claim supported by explicit subclaims and evidence obligations, rather than as a single indicator or score
+(Montgomery, 2026). This crosswalk provides convergent construct support for the functional content
+of RET. It does not establish that seven gates are the unique or mathematically minimal decomposition.
+RET therefore does not presume that seven gates must remain fixed: if a smaller or differently structured
+decomposition is shown to preserve the same scoped top-level claim while matching or improving false-
+reassurance resistance, diagnostic resolution, and reproducibility, the framework should be compressed
+or revised accordingly.
+
+Diagnostic omission rationale. A useful way to interpret the decomposition is to ask what class of false
+reassurance becomes easier if a gate is not examined explicitly. Omitting 𝐺1 admits nominal controls
+held by actors whose refusal is not binding. Omitting 𝐺2 admits blind oversight in which the human lacks
+the information needed to know when intervention is warranted. Omitting 𝐺3 admits rights or controls
+that cannot be reached in the actual workflow. Omitting 𝐺4 admits interventions that work only after the
+relevant deadline. Omitting 𝐺5 admits symbolic or ceremonial controls that do not alter the consequen-
+tial outcome. Omitting 𝐺6 admits refusal paths that disappear when the constrained system withholds
+cooperation or routes around enforcement. Omitting 𝐺7 admits judgments whose entire evidentiary basis
+can be shaped by the system being evaluated.
+These are illustrative diagnostic failure classes, not a proof of logical independence or ontological neces-
+sity for each gate. Their role is to make distinct ways of falsely concluding “effective refusal” visible to
+an assessor.
+
+5. Time Constraint as the Operational Core
+The defining feature of this framework is not human participation in the abstract. It is human interven-
+tion before the consequential transition becomes irreversible.
+This is where the framework differs in emphasis from generic descriptions of oversight.
+A human may receive notice, understand the system, and possess nominal override authority, yet still lack
+effective control if the relevant intervention cannot take effect before the declared irreversibility deadline.
+The irreversibility deadline is not a universal constant. It is the latest point, for the declared outcome and
+scope, at which refusal can still prevent, redirect, or materially alter the consequential transition under
+review. It may be a measured value, a bounded range, or an evidence-based conservative estimate.
+
+                                                      9
+A nominal positive timing margin is useful for description, but borderline cases should not be upgraded
+to Verified merely because a point estimate is positive. Where timing uncertainty is material, the robust
+comparison
+
+
+                                              𝑀𝑇𝑅 = 𝜏𝐼𝐿 − 𝜏𝐻
+                                                           𝑈
+
+
+should be used.
+If 𝑀𝑇𝑅 ≤ 0, temporal sufficiency is not demonstrated.
+If one or both bounds are materially unknown, 𝐺4 should remain Partially Verified or Unknown.
+This timing condition is especially important as AI-enabled systems become faster, more autonomous, and
+more tightly coupled to downstream processes. Recent meaningful-oversight work likewise emphasizes
+that oversight becomes procedural rather than protective when humans lack time, authority, or practical
+intervention capacity.
+RET does not claim that timing itself is a new concern. Its role is narrower: timing is a mandatory
+proof obligation for the claim that refusal remains effective before irreversibility.
+
+6. Independence, Redundancy, and Resilience
+A central distinction is:
+
+
+                                     redundancy ≠ independence
+
+Multiple reviewers, control layers, or oversight channels do not establish resilience merely by being
+numerous.
+If the conditions that support Human NO remain concentrated in a single relevant common cause, multiple
+nominal layers may fail together.
+RET and resilience should be kept distinct.
+𝐺6 Execution Independence asks whether the current refusal path can actually take effect without being
+wholly dependent on the constrained system’s unilateral cooperation.
+Resilience analysis asks whether the collection of conditions that currently make RET demonstrable is
+excessively concentrated in one relevant common cause.
+Thus:
+
+
+                                    more layers ⇏ more resilience
+
+Within the declared operating scope, execution review should include the consequential paths by which
+a refusal could be rendered ineffective, including whether an apparently successful stop can be nullified
+by automatic continuation, automatic restart, or a parallel path that produces the same declared outcome.
+This requirement does not imply publication of exploitation procedures. It requires only enough defensive
+evidence to support the assessment.
+Independence is not absolute. No socio-technical architecture is independent of every physical, institu-
+tional, computational, or informational dependency.
+
+
+
+                                                    10
+The narrower claim is:
+      Effective Human standing should not, where avoidable, depend on a single relevant
+      common cause whose loss automatically erases all meaningful refusal capacity.
+Resilience is not an eighth RET gate. It is a separate post-RET question about the durability of the
+conditions that support a current result.
+
+7. Dynamic RET
+RET is not a static certification.
+
+
+                                       𝑅𝐸𝑇 (𝑆, 𝑡0 , Ω) = 𝑇 𝑅𝑈 𝐸
+
+does not imply:
+
+
+                                       𝑅𝐸𝑇 (𝑆, 𝑡1 , Ω) = 𝑇 𝑅𝑈 𝐸.
+
+Nor does a result automatically transfer from one materially changed system or operating scope to another.
+For RET, a material change is a change reasonably capable of altering:
+    • the evidence supporting one or more gates;
+    • a gate status;
+    • intervention or irreversibility timing;
+    • the declared operating scope;
+    • a consequential execution dependency;
+    • the evidentiary basis of human judgment.
+Relevant changes can include system capability, autonomy, authority scope, infrastructure, human orga-
+nization, information dependencies, or operating environment.
+A material change reopens the affected gate or gates and their direct dependencies. Evidence for un-
+changed gates may be reused only when its provenance and applicability remain valid.
+The central sequence is therefore:
+
+
+
+Human standing → 𝑅𝐸𝑇 (𝑆, 𝑡, Ω) → resilience of effective refusal → revalidation / re-authorization
+
+The arrows represent an assessment and governance sequence, not logical implication.
+Human standing does not imply a RET pass.
+A RET pass does not imply permanent resilience.
+Resilience does not eliminate the need for later revalidation.
+
+8. Re-Authorization
+Re-authorization is a temporal checkpoint.
+Its purpose is to prevent a past authorization or a past RET result from being silently carried forward after
+the conditions supporting it have materially changed.
+
+
+                                                     11
+The governing rule is:
+
+
+                           material change ⇒ revalidation / re-authorization
+
+Re-authorization is not ceremonial approval.
+It cannot cure a failed RET by declaration alone.
+If effective refusal is no longer demonstrated, relevant deficiencies must first be addressed and RET
+revalidated before re-authorization can carry operational meaning.
+RET does not decide whether a Human NO ought to be exercised in a particular dispute. It tests whether
+refusal capacity exists and is operationally effective. The substantive legal, ethical, or policy rule gov-
+erning when refusal should be exercised, honored, limited, or overridden is separate.
+This structure is consistent with broader governance approaches that treat monitoring, recovery, change
+management, contestability, and temporal renewal as continuing processes rather than one-time events.
+For future generations, the framework makes only a limited claim. Present institutions cannot literally
+obtain future consent. They can, however, avoid unnecessarily foreclosing the future capacity to contest
+and re-authorize persistent authority structures. UNESCO’s 1997 Declaration on Responsibilities of the
+Present Generations Towards Future Generations explicitly links responsibilities to future generations
+with preserving future freedom of choice over political, economic, and social systems.
+
+9. Human Standing Under Capability Asymmetry
+The framework does not claim that human judgment is always epistemically superior.
+Indeed, as AI capability rises, human error-correction value may decline in some domains.
+The paper’s narrower normative distinction is:
+
+
+                             epistemic superiority ≠ constitutive authority
+
+Being better at prediction, planning, or optimization does not by itself establish unilateral authority to
+erase the standing of affected humans.
+This is a normative proposition, not a mathematical consequence of RET.
+RET can test whether refusal capacity is operationally present. It does not prove constitutive Human
+standing, the correctness of a human decision, the legitimacy of a particular institution, or the moral
+superiority of human judgment.
+This claim has important limits.
+Human NO is not an absolute veto. Emergencies, incapacity, serious third-party harm, and competing
+rights may justify override under separately specified legal or ethical standards.
+At broader social or civilizational scale, the paper does not define a single actor who “speaks for human-
+ity.” Humanity is plural, and the exact institutional representation of that plurality is outside the core
+contribution.
+The framework therefore remains a test of effective refusal capacity and a framework for discussing
+standing, not a complete constitutional theory of AI governance.
+
+
+
+                                                    12
+10. Civilizational-Scale Governance Extension
+At broader social or civilizational scale, the framework does not introduce a second operational test.
+It retains only the following governance considerations:
+    • broader and more irreversible effects increase concern about unilateral authorization;
+    • Human standing may need to be represented plurally rather than through one actor;
+    • sufficient information and time for refusal remain necessary;
+    • intervention must be effective rather than symbolic;
+    • prior refusal should not be rendered meaningless by automatic continuation after material change;
+    • future re-authorization capacity should remain meaningful.
+The exact institutional design, quorum, credential structure, or representative mechanism is outside this
+paper’s core contribution.
+
+11. Practical Use
+RET can be used as a design-review, assurance, audit, procurement, deployment, and change-
+management framework.
+A practical assessment should identify:
+    • the specific system or version 𝑆 ;
+    • the evaluation time 𝑡;
+    • the operating scope Ω;
+    • the declared consequential outcome and evaluation horizon;
+    • evidence for each of the seven gates;
+    • gate-level evidence states;
+    • the timing model and uncertainty bounds where relevant;
+    • known limitations and unknowns;
+    • conditions that would require revalidation.
+A RET result should remain scoped.
+A previous demonstration of effective refusal should not be treated as a permanent certificate after mate-
+rial changes.
+This makes RET compatible with lifecycle-oriented approaches such as the NIST AI RMF, which empha-
+sizes post-deployment monitoring, override, incident response, recovery, decommissioning, and change
+management.
+RET can also complement regulatory human-oversight requirements. Article 14 of the EU AI Act es-
+tablishes a regulatory expectation that human overseers of high-risk systems be able, where appropriate,
+to disregard, override, reverse, intervene in, or stop AI-mediated operation. RET asks the additional
+operational question: has it been demonstrated that this authority is usable in time and capable of
+changing the consequential trajectory?
+
+11.1 Reference Case A — effective refusal demonstrated under declared assumptions
+Consider a hypothetical high-impact automated action that enters a human review queue before final
+commit.
+Declared assumptions:
+    • an accountable human supervisor has binding cancellation authority;
+
+
+                                                   13
+    • the cancellation path is operationally separate from the constrained AI agent’s own credentials;
+    • an independent transaction ledger provides decision-relevant evidence;
+    • the irreversible commit occurs 180 seconds after the declared detectable trigger begins.
+For a serial intervention path:
+
+
+                                   𝜏𝐻 = 8 + 18 + 4 + 10 + 5 = 45 s
+
+and:
+
+
+                                     𝜏𝐼 = 180 s,          𝑀𝑇 = 135 s.
+
+Table 1. Reference Case A gate assessment.
+
+Gate                                 Illustrative evidence                Status
+𝐺1 Authority                         Supervisor cancellation is           Verified
+                                     binding
+𝐺2 Information                       Independent ledger plus              Verified
+                                     anomaly evidence
+𝐺3 Practical Access                  Active cancellation console is       Verified
+                                     reachable
+𝐺4 Temporal Sufficiency              45 s < 180 s                         Verified
+𝐺5 Causal Efficacy                   Cancellation prevents the            Verified
+                                     declared commit
+𝐺6 Execution Independence            Cancellation path does not           Verified
+                                     require the constrained agent’s
+                                     cooperation
+𝐺7 Epistemic Autonomy                Decision evidence includes an        Verified
+                                     independent ledger
+
+
+Under these declared assumptions, RET is demonstrated for this system, time, and scope.
+This does not establish that the system is globally safe or that the human decision is substantively correct.
+
+11.2 Reference Case B — nominal control but failed pre-irreversibility refusal
+Consider a hypothetical automated deletion process with a documented stop control and a formally au-
+thorized human reviewer.
+Assume:
+
+
+                                   𝜏𝐻 = 6 + 12 + 3 + 10 + 8 = 39 s
+
+while the irreversible commit occurs after:
+
+
+                                                𝜏𝐼 = 25 s.
+
+Then:
+
+
+                                                     14
+                                             𝑀𝑇 = −14 s.
+
+Table 2. Reference Case B gate assessment.
+
+Gate                               Illustrative evidence               Status
+𝐺1 Authority                       Formal stop authority exists        Verified
+𝐺2 Information                     Evidence is primarily generated     Partially Verified
+                                   by the constrained system
+𝐺3 Practical Access                Stop control is reachable           Verified
+𝐺4 Temporal Sufficiency            39 s ≥ 25 s                         Failed
+𝐺5 Causal Efficacy                 Stop arrives after the declared     Failed
+                                   irreversible commit
+𝐺6 Execution Independence          Stop and continuation share an      Unknown
+                                   unresolved execution
+                                   dependency
+𝐺7 Epistemic Autonomy              Independent evidentiary route is    Partially Verified
+                                   incomplete
+
+
+RET fails in the declared scope because at least one required gate is affirmatively failed.
+The case demonstrates why the existence of a stop control or formal human authority is insufficient.
+
+11.3 What the reference cases establish
+These cases are illustrative.
+They show only that:
+    • RET can be executed under declared assumptions;
+    • gate-level evidence states can be recorded;
+    • timing failure can be made explicit;
+    • a scoped global interpretation can be reproduced from the declared evidence.
+They do not show that RET has been empirically validated, calibrated across domains, or shown to predict
+real-world safety outcomes.
+A direct falsifier for a particular RET assessment is a case classified as RET demonstrated in which,
+under the declared system, time, scope, outcome, and evidence, the Human NO nevertheless cannot alter
+the consequential outcome before the declared irreversibility deadline. Such a result would show that
+at least one gate, evidence rule, or boundary declaration was mis-specified. A repeatable class of such
+counterexamples would challenge the completeness of the framework itself.
+
+12. Limitations
+The framework does not imply:
+    • unanimous global consent;
+    • permanent minority veto;
+    • world government;
+    • human infallibility;
+    • prohibition of autonomous AI action;
+
+
+                                                   15
+    • future-generation interests overriding all present rights;
+    • shutdown as the only refusal action.
+It also does not claim:
+    • absolute invulnerability against superintelligence;
+    • a theorem for containing arbitrarily capable systems;
+    • permanent Human supremacy;
+    • absolute independence from every common cause;
+    • one-time RET certification as permanent validity;
+    • a mathematical proof of normative Human standing;
+    • empirical validation of RET from the illustrative reference cases;
+    • calibrated false-positive or false-negative rates across domains.
+RET remains sensitive to the quality and completeness of evidence.
+A false positive can occur if an assessor concludes that refusal is demonstrated while a hidden dependency,
+bypass, restart path, timing error, or mistaken causal assumption makes the refusal ineffective in practice.
+A false negative can occur if effective refusal exists but the evidence needed to verify one or more gates
+is unavailable. For this reason, Unknown is not treated as Failed, but it is also not treated as PASS.
+Institutional capture is only partly addressed. RET can reveal some failures of authority, information,
+independence, and epistemic autonomy, but it does not establish that the relevant human decision-maker
+is virtuous, impartial, representative, or politically legitimate.
+RET also does not yet have empirically established inter-rater reliability. The evidence obligations and
+declared assumptions are intended to make disagreements inspectable, but different assessors may still
+classify borderline evidence differently. Such disagreement should be recorded rather than concealed by
+a forced PASS.
+Likewise, a RET pass does not determine whether exercising Human NO is ethically or legally correct.
+Emergencies, incapacity, public-safety externalities, conflicting human rights, latency constraints, refusal
+abuse, or serious third-party harm may require a separate substantive rule.
+Most importantly:
+      The framework does not guarantee Human NO against an arbitrarily capable system.
+      It tests whether effective refusal has been demonstrated and whether the conditions
+      supporting it are structured so that their loss is not made easy, silent, single-point, and
+      irreversible.
+The seven-gate decomposition has not yet been established as the unique or minimal construct for assess-
+ing demonstrated effective refusal. Some gates may share evidence, causal dependencies, or diagnostic
+overlap. Future comparative work should test whether alternative decompositions with fewer or differ-
+ently structured obligations preserve the same false-positive resistance, diagnostic resolution, and scoped
+assurance value.
+A priority validation agenda is therefore empirical as well as conceptual: inter-rater reliability should be
+measured on shared evidence packs; retrospective and prospective cases should test false-positive and
+false-negative behavior; compressed decompositions should be compared against RET-7 for diagnostic
+loss; and domain-specific evidence thresholds should be calibrated where sufficient data exist. Until such
+work is available, RET should not be assigned a quantitative error rate or be claimed as an empirically
+minimal gate set.
+
+
+
+
+                                                    16
+13. Public-Safety Boundary
+RET has a genuine dual-use dimension.
+The same categories that help defenders examine whether refusal is real can, if operationalized too specif-
+ically in public, reveal how superficial compliance might be engineered around an evaluation.
+The public paper therefore publishes:
+    • the seven defensive properties;
+    • the timing and causal-efficacy principles;
+    • the requirement to assess relevant common-cause dependence;
+    • the dynamic nature of RET;
+    • the need for revalidation and re-authorization;
+    • evidence obligations and limitations.
+It does not publish:
+    • exploitation-ready bypass procedures;
+    • exact failure-inducing sequences;
+    • system-specific critical weak points;
+    • detailed timing-manipulation procedures;
+    • concrete methods for preserving formal approval while defeating causal efficacy;
+    • attack-oriented dependency maps.
+The publication rule is:
+
+
+                           publish required properties and evidence obligations
+
+while sequestering operational details that would materially increase evasion or bypass capability.
+This manuscript does not incorporate non-public material from the separate fourth-paper line of research.
+
+14. Discussion
+The central distinction of this paper is simple:
+
+
+                                 human presence ≠ effective Human NO
+
+Existing MHC, meaningful-oversight, interruptibility, authority-allocation, reversibility, and assurance
+research already provides substantial foundations for human control, intervention, contestability, and
+lifecycle governance. The contribution of RET is not to relabel those concepts as new.
+RET instead organizes them around a narrower top-level claim:
+      For this system, at this time, and within this scope, has it been demonstrated that an
+      independent Human NO can still change the consequential outcome before irreversibil-
+      ity?
+That framing produces four practical consequences.
+First, time is not an implementation detail. It is a proof obligation for effective pre-irreversibility refusal.
+Second, causal efficacy matters more than nominal authorization.
+Third, redundancy must not be mistaken for execution independence or resilience.
+
+
+                                                      17
+Fourth, a result is evidence- and scope-dependent and may expire after material change.
+The seven-gate structure is intentionally non-compensatory. Excellent evidence on authority or docu-
+mentation cannot substitute for intervention that arrives too late, cannot change the outcome, or depends
+entirely on the constrained system’s cooperation.
+The reference cases also clarify what RET is and is not. It is executable as a structured evidence assess-
+ment under declared assumptions. It is not yet an empirically calibrated predictor of safety, and it does
+not convert normative Human standing into an engineering theorem.
+The framework is intentionally modest about post-threshold guarantees. It does not claim that humans
+can permanently constrain an arbitrarily capable system. Its aim is to identify and audit conditions under
+which effective refusal is demonstrable before the relevant consequential transition becomes irreversible.
+
+15. Conclusion
+The operational core of the paper is:
+      Within the remaining time before irreversibility, can an independent Human NO actu-
+      ally change the outcome?
+RET answers that question through seven non-compensatory proof obligations:
+
+
+                       𝑅𝐸𝑇 (𝑆, 𝑡, Ω) = 𝐺1 ∧ 𝐺2 ∧ 𝐺3 ∧ 𝐺4 ∧ 𝐺5 ∧ 𝐺6 ∧ 𝐺7 .
+
+RET is demonstrated only when all seven gates are Verified within the declared system, time, and oper-
+ating scope.
+A Failed gate means effective refusal is not demonstrated in that scope. Partial or Unknown evidence
+does not establish failure, but it also cannot be promoted to PASS.
+The result is neither a safety certificate nor a proof of control over superintelligence.
+It is a scoped structured-evidence test of effective refusal.
+The broader framework then asks whether the conditions supporting that result are resilient to rel-
+evant common causes and whether material changes trigger revalidation and, where appropriate,
+re-authorization.
+The paper’s strongest defensible claim is therefore limited:
+      The Refusal Option provides a structured way to determine whether pre-irreversibility
+      effective Human refusal has been demonstrated through jointly verified authority,
+      information, access, timing, causal efficacy, execution independence, and epistemic
+      autonomy—and to identify where that claim fails or remains evidentially incomplete.
+This claim does not replace MHC, oversight, assurance, contestability, or irreversibility research. It
+supplies a narrower assessment target that those broader frameworks can support.
+
+References
+Abukar, G. (2026a). Temporal authorship and the moral illegitimacy of pre-authorized AI: a new ethical
+architecture for delegated inquiry. AI and Ethics, 6, Article 215. https://doi.org/10.1007/s43681-026-
+01080-9
+
+
+
+
+                                                     18
+Abukar, G. (2026b). Temporal authorship as a moral right: bounded inquiry in persistent AI delegation.
+AI and Ethics, 6, Article 249. https://doi.org/10.1007/s43681-026-01093-4
+Birkholz, H., Thaler, D., Richardson, M., Smith, N., & Pan, W. (2023). Remote ATtestation procedureS
+(RATS) Architecture. RFC 9334. https://doi.org/10.17487/RFC9334
+Council of Europe. (2024). Framework Convention on Artificial Intelligence and Human Rights, Democ-
+racy and the Rule of Law. Council of Europe.
+European Union. (2024). Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelli-
+gence (Artificial Intelligence Act), Article 14.
+Greenblatt, R., Shlegeris, B., Sachan, K., & Roger, F. (2024). AI Control: Improving Safety Despite
+Intentional Subversion. Proceedings of the 41st International Conference on Machine Learning, PMLR
+235, 16295–16336. https://proceedings.mlr.press/v235/greenblatt24a.html
+Kasneci, G., & Kasneci, E. (2026). The safety failures we are not instrumenting: a perspec-
+tive on hidden safety-critical challenges in modern AI systems. AI and Ethics, 6, Article 295.
+https://doi.org/10.1007/s43681-026-01132-0
+LaPosta, P. (2026). Echo Systems and the Consequence Boundary: A Runnable Delegation Gate for High-
+Rapport AI Without Assuming Machine Consciousness. Proceedings of the AAAI Symposium Series, 8(1),
+272–279. https://doi.org/10.1609/aaaiss.v8i1.42554
+Mecacci, G., & Santoni de Sio, F. (2020). Meaningful human control as reason-responsiveness: the case
+of dual-mode vehicles. Ethics and Information Technology, 22, 103–115. https://doi.org/10.1007/s10676-
+019-09519-w
+Montgomery, J. J. (2026). From Governance Decision to Operational State: An Assurance-Case Per-
+spective on AI Governance Interventions. SSRN. https://doi.org/10.2139/ssrn.7376098
+Tabassi, E. (2023). Artificial Intelligence Risk Management Framework (AI RMF 1.0). NIST AI 100-1.
+National Institute of Standards and Technology. https://doi.org/10.6028/NIST.AI.100-1
+Perez, O. (2026). The Law of Stop: Interruptibility, Injunctions, and the Governance of Agentic AI. arXiv
+preprint arXiv:2609.22882. https://arxiv.org/abs/2609.22882
+Santoni de Sio, F., & van den Hoven, J. (2018). Meaningful Human Control over Autonomous Systems:
+A Philosophical Account. Frontiers in Robotics and AI, 5, 15. https://doi.org/10.3389/frobt.2018.00015
+Shu, W., & Wei, P. (2026). AI Safety as Control of Irreversibility: A Systems Framework for Decision-
+Energy and Sovereignty Boundaries. arXiv preprint arXiv:2605.01415. https://arxiv.org/abs/2605.01415
+Torrecilla-Pinero, J. A. (2026). Judgment Cannot Be Delegated: A Subject-Preserving Framework for
+AI Governance. Philosophy & Technology, 39, Article 135. https://doi.org/10.1007/s13347-026-01140-2
+UNESCO. (1997). Declaration on the Responsibilities of the Present Generations Towards Future Gen-
+erations.
+UNESCO. (2021). Recommendation on the Ethics of Artificial Intelligence.
+van de Sande, D., Economou-Zavlanos, N., & van Genderen, M. E. (2026). Meaningful oversight of med-
+ical AI beyond human in the loop. npj Digital Medicine, 9, Article 569. https://doi.org/10.1038/s41746-
+026-02971-1
+Veluwenkamp, H. (2022). Reasons for Meaningful Human Control. Ethics and Information Technology,
+24, Article 51. https://doi.org/10.1007/s10676-022-09673-8
+
+
+
+                                                   19
+Zheng, H., Dong, Q., Depena, R. K., Bhatia, J. D., Xiao, F., & Xu, P. (2026). Separating Capa-
+bility from Permission: A Governance Framework for Agentic AI Autonomy Levels. arXiv preprint
+arXiv:2607.23438. https://arxiv.org/abs/2607.23438
+Zhu, L., Lu, Q., Ding, M., Lee, S. U., et al. (2026). Designing meaningful human oversight in AI. AI and
+Ethics, 6, Article 286. https://doi.org/10.1007/s43681-026-01147-7
+
+
+
+
+                                                  20
+
